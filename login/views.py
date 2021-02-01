@@ -310,7 +310,8 @@ def user(request):
                             'question_id': x.table_question_content_col_question_id,
                             'question_type': x.table_question_content_col_question_type,
                             'content': x.table_question_content_col_content,
-                            'indicator_id': x.table_question_content_col_indicator_id
+                            'indicator_id': x.table_question_content_col_indicator_id,
+                            'question_class': x.table_question_content_col_question_class,
                         })
                     page_num = 0
                 else:
@@ -320,13 +321,13 @@ def user(request):
                             'question_id': x.table_question_content_col_question_id,
                             'question_type': x.table_question_content_col_question_type,
                             'content': x.table_question_content_col_content,
-                            'indicator_id': x.table_question_content_col_indicator_id
+                            'indicator_id': x.table_question_content_col_indicator_id,
+                            'question_class': x.table_question_content_col_question_class,
                         })
                     page_num = num
                 return render(request, 'login/usrselect.html',
-                              {'name1': name1, 'names': evals, 'l': len(evals), 'question': question,
-                               'preview_length': len(list),
-                               'user': user_name, 'orgname': orgname, 'page_num': page_num})
+                              {'names': evals, 'l': len(evals),
+                               'user': user_name, 'orgname': orgname, })
 
             else:
                 return render(request, 'login/usrselect.html', {'names': evals, 'user': user_name, 'orgname': orgname})
@@ -500,3 +501,86 @@ def download_form(request):
     response['Content-Disposition'] = 'attachment;filename="{0}"'.format(escape_uri_path(file_name))
     response.write(output.getvalue())
     return response
+
+def upload_xlsx(request):
+    """ 导入Excel数据 """
+    if request.method == 'POST':
+        try:
+            with transaction.atomic():  # 事物
+                excel = request.FILES.get('file_obj')
+                book = xlrd.open_workbook(filename=None, file_contents=excel.read())
+                sheet = book.sheet_by_index(0)
+                num_row = sheet.nrows
+
+                if num_row == 4:
+                    return HttpResponse('未填写数据')
+
+                user_info = sheet.row_values(1)
+                question_title = user_info[0]  # 题目内容
+                question_id = user_info[1]  # 题目id
+                question_indicator_id = user_info[2]  # 题目对应指标id
+                question_num = user_info[3]  # 题目id
+                question_user = user_info[4]  # 填写题目的用户
+                question_user_realname = user_info[5]  # 用户真实姓名
+                question_user_org = user_info[6]  # 用户单位id
+
+                line_2 = sheet.row_values(2)
+                line_length = len(line_2)
+                flag = 0
+                for x in range(0, line_length):
+                    if len(line_2[x]) == 0:
+                        flag = x
+                        break
+                if flag != 0:
+                    line_length = flag
+
+                list_form = []
+                for row in range(4, num_row):
+                    line = sheet.row_values(row)
+                    tmp = []
+                    if line_length < 7:
+                        for x in range(0, line_length):
+                            tmp.append(line[x])
+                        list_form.append(tmp)
+                    else:
+                        list_form.append(line)
+
+                store_answer = {'title': question_title, 'answer': list_form}
+                store_mark = TableQuestionContent.objects.get(
+                    table_question_content_col_question_id=question_id).table_question_content_col_marks
+                if len(store_mark) == 0:
+                    store_mark = 0
+                store_user_id = TableUser.objects.get(
+                    Q(table_user_col_name=question_user) & Q(table_user_col_real_name=question_user_realname)).table_user_col_id
+                store_questionaire_id = 1
+                store_question_id = TableQuestionContent.objects.get(
+                    table_question_content_col_question_id=question_id).table_question_content_col_question_id
+
+                if TableQuestionResult.objects.filter(
+                        table_question_result_col_user_id=store_user_id).exists() & TableQuestionResult.objects.filter(
+                        table_question_result_col_question_id=store_question_id).exists():
+                    TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(
+                        table_question_result_col_question_id=store_question_id)).update(
+                        table_question_result_col_answer=store_answer,
+                    )
+                else:
+                    store_blank = ''.join(random.sample(string.ascii_letters + string.digits, 20))  # 创建blank随机名
+                    new_record = {
+                        "table_question_result_col_answer": store_answer,
+                        "table_question_result_col_marks": store_mark,
+                        "table_question_result_col_blank": store_blank,
+                        "table_question_result_col_user_id": store_user_id,
+                        "table_question_result_col_questionaire_id": store_questionaire_id,
+                        "table_question_result_col_question_id": store_question_id,
+                    }
+                    # print(new_record)
+                    TableQuestionResult.objects.create(**new_record)
+
+                return HttpResponse('OK')
+        except Exception as e:
+            print(e)
+            # return render(request, 'user/user.html')
+            pass
+    pass
+    # return render(request, 'user/user.html')
+

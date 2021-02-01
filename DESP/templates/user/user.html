@@ -1,7 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" class="loading" xmlns="http://www.w3.org/1999/html">
+<html lang="en" class="loading">
 <head>
+    <style>
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 55%;
+            height: auto;
+            padding: 20px;
+            border: 10px solid orange;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+    </style>
     <style>
         ul.pagination {
             display: inline-block;
@@ -73,8 +88,9 @@
 <div class="wrapper nav-collapsed menu-collapsed">
     <nav class="navbar navbar-expand-lg navbar-light bg-faded">
         <div class="container-fluid">
-            <div class="logo clearfix"><a href="{% url 'user' %}" class="logo-text float-left">返回</a>
-            </div>
+                        <div class="logo clearfix"><a href="{% url 'user' %}" class="logo-text float-left">返回</a>
+                        </div>
+
             <div class="navbar-header">
                 <span class="d-lg-none navbar-right navbar-collapse-toggle">
                     <a class="open-navbar-container">
@@ -134,12 +150,6 @@
                                 <div class="card-title-wrap bar-success">
                                     <h4 class="card-title">问卷填写</h4>
                                 </div>
-                                    <div id="names">                                </div>
-{#                            <select>#}
-{#                                {% for each in names %}#}
-{#                                    <option value='{{ each }}'>参与项目{{ each }}</option>#}
-{#                                 {% endfor %}#}
-{#                            </select>#}
                             </div>
                             <div class="card-body">
                                 <div class="card-block">
@@ -274,6 +284,8 @@
     for (var i = 0; i < q.length; i++) {
         var content = q[i]['content'];
         var question_type = q[i]['question_type'];
+        var question_id = q[i]['question_id'];
+        var question_class = q[i]['question_class'];
         if (q[i]['question_type'] === '选择题') {
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
@@ -290,31 +302,45 @@
                 "        </div>\n" +
                 "        <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"选择题\">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "        </div>" +
                 "    </form>\n" +
                 "</div><br>");
             for (var x = 0; x < JSON.parse(q[i]['content'])['answer'].length; x++) {
-                $('.div_question').last().find('.choice_list').append("" +
-                    "<li class=\"mb-2\">\n" +
-                    "   <input type=\"checkbox\" name='choice' data-index = " + x + " onclick =\"ischecked(event)\">\n" +
-                    "   <span>" + JSON.parse(q[i]['content'])['answer'][x] + "</span>" +
-                    "</li>\n");
+                if(q[i]['question_class'] === '多选') {
+                    $('.div_question').last().find('.choice_list').append("" +
+                        "<li class=\"mb-2\">\n" +
+                        "   <input type=\"checkbox\" name='choice' data-index = " + x + " onclick =\"ischecked(event)\">\n" +
+                        "   <span>" + JSON.parse(q[i]['content'])['answer'][x] + "</span>" +
+                        "</li>\n");
+                }else {
+                    $('.div_question').last().find('.choice_list').append("" +
+                        "<li class=\"mb-2\">\n" +
+                        "   <input type=\"radio\" name='choice' data-index = " + x + " onclick =\"ischecked(event)\">\n" +
+                        "   <span>" + JSON.parse(q[i]['content'])['answer'][x] + "</span>" +
+                        "</li>\n");
+                }
             }
         } else if (q[i]['question_type'] === '填空题') {
             var len = $(".div_question").length + 1;
+            var text = JSON.parse(q[i]['content'])['title'];
             $('#question_list').append("" +
                 "<div class=\"div_question\" id = " + len + ">\n" +
                 "   <form method=\"post\" class=\"form-horizontal\">\n" +
                 "       <div onclick=\"toggle_edit(event)\" class='toggle'>\n" +
                 "           <div>\n" +
-                "               <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
-                "               <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + " </h5>\n" +
+                "               <h5 style=\"display: inline\" >" + len + '.' + ' ' + "</h5>" +
+                "               <h5 style=\"display: inline\" name=\"fillblank\" onclick=\"fillblank()\">" + text + " </h5>" +
+                "               <h5></h5>"+
                 "           </div>\n" +
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" value=\"填空题\">\n" +
-                "           <input style=\"display: none\" name=\"questionnumber\" value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
                 "   </form>\n" +
                 "</div><br>");
@@ -327,12 +353,14 @@
                 "           <div>\n" +
                 "               <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
                 "               <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + " </h5>\n" +
-                "               <textarea class=\'form-control\' name=\'answerarea\' disabled>答题区域</textarea>" +
+                "               <textarea class=\'form-control\' name=\'answerarea\'>答题区域</textarea>" +
                 "           </div>\n" +
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" value=\'简答题\'>\n" +
-                "           <input style=\"display: none\" name=\"questionnumber\" value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
                 "   </form>\n" +
                 "</div><br>");
@@ -359,7 +387,9 @@
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"矩阵题\">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
+                "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
                 "   </form>\n" +
                 "</div><br>");
@@ -374,15 +404,23 @@
                     "   </td>\n" +
                     "</tr>\n");
                 for (var z = 0; z < JSON.parse(q[i]['content'])['column'].length; z++) {
-                    $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("" +
-                        "<td><a class=\"ft-circle\"</a></td>");
+                    if(q[i]['question_class'] === '单选') {
+                        $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("" +
+                            "<td><input type=\"radio\" name='choice' data-index = " + (y * x + z) + " onclick =\"ischecked(event)\"></td>");
+                        {#"<td><a class=\"ft-circle\"</a></td>");#}
+                    }else {
+                        $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("" +
+                            "<td><input type=\"checkbox\" name='choice' data-index = " + (y * x + z) + " onclick =\"ischecked(event)\"></td>");
+                    }
                 }
             }
+
         } else if (q[i]['question_type'] === '表格题') {
+                            {#"   <form method=\"post\" class=\"form-horizontal\">\n" +#}
+                            {#"   </form>\n" +#}
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
                 "<div class=\"div_question\" id = " + len + ">\n" +
-                "   <form method=\"post\" class=\"form-horizontal\">\n" +
                 "       <div onclick=\"toggle_edit(event)\" class='toggle'>\n" +
                 "           <div>\n" +
                 "               <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
@@ -403,11 +441,17 @@
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"表格题\">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "       </div>" +
-                "       <div>" +
+                "       <div style=\"text-align:center;\">" +
                 "           <button class=\"btn mr-1 btn-secondary\" onclick=\"return download_form(" + q[i]['question_id'] + ")\">导出模板</button>" + "&emsp;&emsp;" +
-                "           <button class=\"btn mr-1 btn-secondary\" onclick=\"upload_form()\">导入表格</button>"+
+                "           <a class='btn mr-1 btn-secondary' href='JavaScript:void(0)' onclick='openUpload()'>上传表格</a>" +
+                "           <div id=\"light\" class=\"white_content\">" +
+                "               <form action='/uploadExcel/' method='post' enctype='multipart/form-data'>" +
+                "                   <input class='btn mr-1 btn-secondary' type='file' name='file_obj'>" +
+                "                   <button class='btn mr-1 btn-secondary' type='submit' value='upload'>提交</button>" +
+                "               </form>" +
+                "               <a href = \"javascript:void(0)\" onclick = \"closeUpload()\">点这里关闭本窗口</a>" +
+                "           </div>" +
                 "       </div>"+
-                "   </form>\n" +
                 "</div><br>");
             for (var x = 0; x < JSON.parse(q[i]['content'])['column'].length; x++) {
                 $('.div_question').last().find('table').eq(0).children('thead').children().eq(0).append("" +
@@ -436,13 +480,13 @@
 
 
 
-
     value_num = {{ page_num|safe }}
+
     //上一页按钮
     if(value_num != 0){
-        $("#pages").append("<li><a id=" + (value_num-1) + " class=\"\" onclick=\"preview(this.id)\" >上一页</a></li>")
+        $("#pages").append("<li><a name=" + (value_num-1) + " class=\"\" onclick=\"preview(this.name)\" >上一页</a></li>")
     }else{
-        $("#pages").append("<li><a id=" + (value_num) + " class=\"\" onclick=\"preview(this.id)\" >上一页</a></li>")
+        $("#pages").append("<li><a name=" + (value_num) + " class=\"\" onclick=\"preview(this.name)\" >上一页</a></li>")
     }
 
     //显示题目
@@ -454,20 +498,17 @@
     page_len = {{ preview_length|safe }}
     //下一页按钮
     if(value_num != (page_len-1)){
-        $("#pages").append("<li><a id=" + (value_num+1) + " class=\"\" onclick=\"preview(this.id)\" >下一页</a></li>")
+        $("#pages").append("<li><a name=" + (value_num+1) + " class=\"\" onclick=\"preview(this.name)\" >下一页</a></li>")
     }else{
-        $("#pages").append("<li><a id=" + (value_num) + " class=\"\" onclick=\"preview(this.id)\" >下一页</a></li>")
+        $("#pages").append("<li><a name=" + (value_num) + " class=\"\" onclick=\"preview(this.name)\" >下一页</a></li>")
     }
 
     //当前页面按钮显示
     document.getElementById(value_num).className = 'active'
 
-
-
     function preview(id) {
         window.location.href = "{% url 'questions' %}?evalname="+ "{{ current_eval|safe }}"+ "&page="+ id
     }
-
     function download_form(value){
         window.location.href = "{% url 'download_form' %}?form=" + value + ""
         return false
@@ -475,6 +516,19 @@
 
     function upload_form(){
 
+    }
+</script>
+
+<script>
+    $(function(){})
+    function openUpload(){
+        document.getElementById("light").style.display = 'block';
+        {#document.getElementById("fade").style.display = 'block';#}
+    }
+
+    function closeUpload(){
+        document.getElementById("light").style.display = 'none';
+        {#document.getElementById("fade").style.display = 'none';#}
     }
 </script>
 
@@ -521,6 +575,5 @@
 
     });
 </script>
-
 </body>
 </html>

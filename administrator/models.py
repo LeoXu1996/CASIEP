@@ -86,6 +86,20 @@ class TableTimeliner(models.Model):
         ordering = ['table_timeliner_col_start']
 
 
+class TableQuestionResult(models.Model):
+    table_question_result_col_id = models.AutoField(db_column='Table_Question_Result_col_id', primary_key=True)
+    table_question_result_col_answer = models.CharField(db_column='Table_Question_Result_col_Answer', max_length=256, null=True)
+    table_question_result_col_marks = models.CharField(db_column='Table_Question_Result_col_Marks', max_length=256, null=True)
+    table_question_result_col_blank = models.CharField(db_column='Table_Question_Result_col_Blank', max_length=256, null=True)
+    table_question_result_col_user_id = models.CharField(db_column='Table_Question_Result_col_user_id', max_length=256, null=True)
+    table_question_result_col_questionaire_id = models.CharField(db_column='Table_Question_Result_col_questionaire_id', max_length=256, null=True)
+    table_question_result_col_question_id = models.CharField(db_column='Table_Question_Result_col_question_id', max_length=256, null=True)
+
+    class Meta:
+        managed = True
+        db_table = 'Table_Question_Result'
+
+
 class TableUploadFile(models.Model):
     table_upload_file_col_id = models.AutoField(db_column='Table_Upload_File_col_id', primary_key=True)
     table_upload_file_col_name = models.CharField(db_column='Table_Upload_File_col_name', max_length=256)
