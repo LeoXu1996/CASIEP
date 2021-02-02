@@ -430,7 +430,7 @@ def evaluation_edit(request):
         evaluation_id = request.GET.get('edit_id')
         eva = serializers.serialize("json",
                                     models.TableEvaluation.objects.filter(table_evaluation_col_id=evaluation_id))
-        # print(eva)
+        print(eva)
         return JsonResponse({'eva': eva})
     elif request.method == 'POST':
         # pdb.set_trace()

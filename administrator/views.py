@@ -168,10 +168,17 @@ def export_questionaire(request):
     q_e = request.GET.get('questionaire_evalname')
     file_name = u"questionaire_" + str(q_e) + ".xls"
     workbook = Workbook(encoding='utf-8')
-
+    id=''
     # 查询项目对应的机构名称id作为parentid
     select_org = models.TableEvaluation.objects.get(Q(table_evaluation_col_name=q_e)).table_evaluation_col_organization
-    parent_org_id = TableOrganization.objects.get(Q(table_organization_col_name=select_org)).table_organization_col_id
+    # print(select_org)
+    for each in select_org:
+        if each != ',':
+            id+=each
+        else:
+            # print(id)
+            # parent_org_id = TableOrganization.objects.get(Q(table_organization_col_id=int(id))).table_organization_col_id
+            break
 
     list_indicator = models.TableEvaluationIndicator.objects.filter(
         Q(table_evaluation_indicator_col_evaluation_name=q_e) &
@@ -254,21 +261,29 @@ def export_questionaire(request):
                 for x in range(0, count):
                     worksheet.write(3, x + 2, TQC_content_answer[x], style)
 
-            if TableOrganization.objects.filter(Q(table_organization_col_parent_name_id=parent_org_id)).exists():
-                org_id = TableOrganization.objects.filter(Q(table_organization_col_parent_name_id=parent_org_id))
-                count = 0
-                for n in org_id:
-                    TO_org_name = str(n.table_organization_col_name)
-                    TO_org_id = str(n.table_organization_col_id)
+            # if TableOrganization.objects.filter(Q(table_organization_col_parent_name_id=parent_org_id)).exists():
+            #     org_id = TableOrganization.objects.filter(Q(table_organization_col_parent_name_id=parent_org_id))
+            #     count = 0
+            #     for n in org_id:
+            #         TO_org_name = str(n.table_organization_col_name)
+            #         TO_org_id = str(n.table_organization_col_id)
+            #         worksheet.write(5 + count, 0, TO_org_name, style)
+            #         worksheet.write(5 + count, 1, TO_org_id, style)
+            #         count = count + 1
+            # else:
+            id=''
+            for each in select_org:
+                if each != ',':
+                    id += each
+                else:
+                    # org_id = parent_org_id
+                    # print(id)
+                    TO_org_name =TableOrganization.objects.get(Q(table_organization_col_id=int(id))).table_organization_col_name
+                    TO_org_id = str(id)
                     worksheet.write(5 + count, 0, TO_org_name, style)
                     worksheet.write(5 + count, 1, TO_org_id, style)
-                    count = count + 1
-            else:
-                org_id = parent_org_id
-                TO_org_name = str(select_org)
-                TO_org_id = str(org_id)
-                worksheet.write(5 + count, 0, TO_org_name, style)
-                worksheet.write(5 + count, 1, TO_org_id, style)
+                    count+=1
+                    id=''
 
     output = BytesIO()
     workbook.save(output)
@@ -277,6 +292,7 @@ def export_questionaire(request):
     response['Content-Disposition'] = 'attachment;filename="{0}"'.format(escape_uri_path(file_name))
     response.write(output.getvalue())
     return response
+
 
 
 def standard(request):
@@ -465,13 +481,13 @@ def edit(request):
                 #     print(a)
                 #     list.append(a.table_evaluation_indicator_col_weight)
                 #     print(list)
-                result=0
+                result = 0
                 for each in editdata:
                     list.append(float(each[2]))
                     # print(each[2])
                 result = sum(list[1:])
                 print(result)
-                if parentid!=None:
+                if parentid != None:
                     if result <= 100:
                         try:
                             TableEvaluationIndicator.objects.filter(
@@ -542,9 +558,10 @@ def timeliner(request):
         for x in timeline_list:
             tmp = []
             if TableUploadFile.objects.filter(Q(table_upload_file_col_evaluation=current_eval)
-                                              &Q(table_upload_file_col_timeliner=x.table_timeliner_col_name)):
+                                              & Q(table_upload_file_col_timeliner=x.table_timeliner_col_name)):
                 test_list_tmp_1 = TableUploadFile.objects.filter(Q(table_upload_file_col_evaluation=current_eval)
-                                                              &Q(table_upload_file_col_timeliner=x.table_timeliner_col_name))
+                                                                 & Q(
+                    table_upload_file_col_timeliner=x.table_timeliner_col_name))
                 for y in test_list_tmp_1:
                     tmp.append({
                         'file_name': y.table_upload_file_col_name,
@@ -617,6 +634,7 @@ def timeliner_create(request):
         else:
             return JsonResponse({'message': '结束时间不得晚于开始时间！'})
 
+
 def timeliner_edit(request):
     if request.method == 'GET':
         timeliner_id = request.GET.get('edit_id')
@@ -646,6 +664,7 @@ def timeliner_edit(request):
         else:
             return JsonResponse({'message': '结束时间不得晚于开始时间！'})
 
+
 def timeliner_delete(request):
     # pdb.set_trace()
     if request.method == 'POST':
@@ -661,6 +680,7 @@ def timeliner_delete(request):
                     return JsonResponse({'state': 1, 'message': '修改成功!'})
                 except Exception as e:
                     return JsonResponse({'state': 0, 'message': 'Edit Error: ' + str(e)})
+
 
 ## 上传功能
 def excel_import_indicator(filename, this_eval_name, this_admin_name):
@@ -767,6 +787,7 @@ def excel_import_indicator(filename, this_eval_name, this_admin_name):
     except:
         return JsonResponse({'message': '表格填写格式问题！'})
 
+
 def upload_indicator(request):
     if request.method == 'GET':
         return render(request, 'standard/standard.html')
@@ -785,6 +806,7 @@ def upload_indicator(request):
         else:
             return JsonResponse({'message': '文件格式错误！'})
 
+
 def download_indicator(request):
     # pdb.set_trace()
     file = open('DESP/uploads/indicator/TableIndicator_Import.xlsx', 'rb')
@@ -792,6 +814,7 @@ def download_indicator(request):
     response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
     response['Content-Disposition'] = 'attachment;filename="TableIndicator_Import.xlsx"'
     return response
+
 
 def questionaire(request):
     a = request.GET.get('nodeID')
@@ -834,6 +857,7 @@ def questionaire(request):
                 question[key] = ''
     return render(request, 'standard/questionaire.html',
                   {'data': data, 'evalname': evalname, 'admin': administrator, 'id': a, 'current_eval': current})
+
 
 def choice_add(request):
     print(request.POST)
@@ -898,6 +922,7 @@ def choice_add(request):
         TableQuestionContent.objects.create(**question)
         return JsonResponse({'msg': 'success'})
 
+
 def blank_add(request):
     if 'required' in request.POST:
         required = 'on'
@@ -958,6 +983,7 @@ def blank_add(request):
         }
         TableQuestionContent.objects.create(**question)
         return JsonResponse({'msg': 'success'})
+
 
 def answer_add(request):
     if 'required' in request.POST:
@@ -1020,6 +1046,7 @@ def answer_add(request):
         }
         TableQuestionContent.objects.create(**question)
         return JsonResponse({'msg': 'success'})
+
 
 def matrix_add(request):
     if 'required' in request.POST:
@@ -1084,6 +1111,7 @@ def matrix_add(request):
         }
         TableQuestionContent.objects.create(**question)
         return JsonResponse({'msg': 'success'})
+
 
 def form_add(request):
     print(request.POST)
@@ -1150,6 +1178,7 @@ def form_add(request):
         TableQuestionContent.objects.create(**question)
         return JsonResponse({'msg': 'success'})
 
+
 def accumulation(request):
     print(request.POST)
     indicatorID = request.POST['indicatorID']
@@ -1174,13 +1203,15 @@ def accumulation(request):
             table_question_content_col_question_type=questiontype)
     return JsonResponse({'msg': 'success'})
 
+
 def questionaire_manage(request):
     current_eval = request.GET.get('timeevalname')
     current_eval1 = current_eval
     # print(current_eval1)
     administrator = request.session['user_name']
     evalname = TableEvaluation.objects.filter(
-        Q(table_evaluation_col_administrator=administrator))  # & Q(table_evaluation_col_status='启用'))
+        Q(table_evaluation_col_administrator=administrator) & Q(table_evaluation_col_name=current_eval))
+    # print(evalname)
     eval_data = [
         {
             # 'org_id': TableOrganization.objects.filter(
@@ -1192,27 +1223,40 @@ def questionaire_manage(request):
             'questionaire_status': project.table_evaluation_col_status,
         } for project in evalname
     ]
-    name_ind=[]
+    # print(eval_data)
+    name_ind = []
     name = ''
     for each in eval_data:
-        print(each)
+        # print(each)
         if each['project_name'] == current_eval:
-            print(current_eval)
+            # print(current_eval)
             for each1 in each['org_name']:
-                if each1!=',':
-                    name+=each1
+                if each1 != ',':
+                    name += each1
                 else:
-                    print(name,'\n')
+                    # print(name,'\n')
                     name_ind.append(name)
                     name = ''
-                if len(name)==len(each['org_name']):
-                    print(name, '\n')
+                if len(name) == len(each['org_name']):
+                    # print(name, '\n')
                     name_ind.append(name)
                     name = ''
 
-
-    print(name_ind)
-
+    # print(name_ind)
+    orgnames = []
+    orgnames1 = []
+    for each in name_ind:
+        orgnames.append(
+            TableOrganization.objects.filter(
+                Q(table_organization_col_id=int(each))
+            )
+        )
+    # print(orgnames)
+    for each in orgnames:
+        for each1 in each:
+            # print(each1.table_organization_col_name)
+            orgnames1.append(each1.table_organization_col_name)
+    # print(orgnames1)
     o = TableOrganization.objects.all()
     if o.exists():
         _data = [
@@ -1228,9 +1272,10 @@ def questionaire_manage(request):
     #     'table_timeliner_col_evaluation')
     # print(eval_data)
     return render(request, 'standard/manage.html',
-                  {'name':name_ind,'data': _data, 'current_eval': current_eval, 'current_eval1': current_eval1,
-                   'eval_data': eval_data,
+                  {'name': name_ind, 'data': _data, 'current_eval': current_eval, 'current_eval1': current_eval1,
+                   'eval_data': eval_data, 'orgnames': orgnames1,
                    'evalname': evalname, 'admin': administrator})
+
 
 def questionaire_submit(request):
     print(request.POST)
@@ -1245,6 +1290,7 @@ def questionaire_submit(request):
     elif request.POST['questiontype'] == '表格题':
         form_add(request)
     return JsonResponse({'msg': 'success'})
+
 
 def question_delete(request):
     print(request.POST)
@@ -1263,10 +1309,12 @@ def question_delete(request):
         obj.save()
     return JsonResponse({'msg': '删除成功！'})
 
+
 def questionaire_delete(request):
     nodeID = request.POST['nodeID']
     TableQuestionContent.objects.filter(table_question_content_col_indicator_id=nodeID).delete()
     return JsonResponse({'msg': '删除成功!'})
+
 
 def scheme_show(request):
     indicatorID = request.POST['indicatorID']
@@ -1283,17 +1331,21 @@ def scheme_show(request):
     else:
         return JsonResponse({'msg': 'Notcreatedyet'})
 
+
 def export_answer(request):  # 导出答案部分
     pass
+
 
 def import_answer(request):  # 导入答案部分
     org_dasdad = request.GET.get('adas')
     pass
 
+
 def questionaire_status(request):
     org_name = request.GET.get('evalname')
     status = request.GET.get('status')
     pass
+
 
 def calculate(request):
     # pdb.set_trace()
@@ -1354,6 +1406,7 @@ def calculate(request):
                    'current_eval': current_eval,
                    'timeline_list': timeline_list, 'dateline': dateline, 'org_eval': org_eval,
                    'timeline_list': res})
+
 
 def review(request):
     current_eval = request.GET.get('timeevalname')

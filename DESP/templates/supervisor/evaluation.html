@@ -440,7 +440,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>项目名称</th>
-                                                    <th>绑定机构</th>
+{#                                                    <th>绑定机构</th>#}
                                                     <th>管理员</th>
                                                     <th>是否记分</th>
                                                     <th>发放方式</th>
@@ -455,7 +455,7 @@
                                                     <tr>
                                                         <td>{{ evaluation.table_evaluation_col_id }}</td>
                                                         <td>{{ evaluation.table_evaluation_col_name }}</td>
-                                                        <td>{{ evaluation.table_evaluation_col_organization }}</td>
+{#                                                        <td>{{ evaluation.table_evaluation_col_organization }}</td>#}
                                                         <td>{{ evaluation.table_evaluation_col_administrator }}</td>
                                                         <td>{{ evaluation.table_evaluation_col_mark }}</td>
                                                         <td>{{ evaluation.table_evaluation_col_deliver }}</td>
@@ -486,7 +486,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>项目名称</th>
-                                                    <th>绑定机构</th>
+{#                                                    <th>绑定机构</th>#}
                                                     <th>管理员</th>
                                                     <th>是否记分</th>
                                                     <th>发放方式</th>
@@ -603,7 +603,7 @@
         var all='';
         for (var i = 0; i < selectedNode.length; i++) {
             {#alert(selectedNode[i].name);#}
-            all=all+selectedNode[i].name+',';
+            all=all+selectedNode[i].id+',';
             {#document.getElementById("create_org").value=selectedNode[i].name;#}
         }
         document.getElementById("create_org").value=all;
@@ -615,7 +615,7 @@
         var all1 = '';
         for (var i = 0; i < selectedNode1.length; i++) {
             {#alert(selectedNode[i].name);#}
-            all1 = all1 + selectedNode1[i].name + ',';
+            all1 = all1 + selectedNode1[i].id + ',';
             {#document.getElementById("create_org").value=selectedNode[i].name;#}
         }
         document.getElementById("edit_org").value = all1;

@@ -172,9 +172,9 @@ def supervisor(request):
     for x in orgs:
         for each in p:
             for each1 in x:
-                # print(each.table_organization_col_name)
-                if each1 == each.table_organization_col_name:
-                    # print(each1)
+                # print(each.table_organization_col_id)
+                if int(each1) == each.table_organization_col_id:
+                    print(each1)
                     index += 1
             if index == 0:
                 data2.append({
@@ -196,7 +196,7 @@ def supervisor(request):
         # print(data2)
         data2_a.append(data2)
         data2 = []
-    # print(data2_a[3])
+    # print(data2_a[9])
     # rett=data2_a[3]
 
     users = models.TableUser.objects.filter(table_user_col_type_id=1)
@@ -242,6 +242,7 @@ def user(request):
     orgname = \
         TableOrganization.objects.filter(table_organization_col_id=orgid).values_list('table_organization_col_name')[0][
             0]
+    print(orgid,orgname)
     data_org = TableEvaluation.objects.all()
     evaindex = []
     for each in data_org:
@@ -250,6 +251,7 @@ def user(request):
     inde = []
     name = ''
     for each in data_org:
+        print(each)
         for letter in each.table_evaluation_col_organization:
             i = 0
             if letter != ',':
@@ -272,8 +274,9 @@ def user(request):
     listeval = []
     for x in orgs:
         index = 0
+        # print(x)
         for each1 in x:
-            if each1 == orgname:
+            if int(each1) == orgid:
                 index += 1
         if index == 0:
             i += 1
@@ -286,6 +289,7 @@ def user(request):
     evals = []
     for each in listeval:
         evals.append(each[0].table_evaluation_col_name)
+    print(listeval)
     name1 = request.GET.get('name1')
     if len(evals)==0:
         return render(request, 'login/usrselect.html', {'user': user_name, 'orgname': orgname})

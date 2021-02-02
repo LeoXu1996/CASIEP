@@ -106,9 +106,9 @@
                             <input type="text" id="create_eval"
                                    name="time_eval" list="time_eval_list" required>
                             <datalist id="time_eval_list">
-                                {% for evals in evalname %}
-                                    <option>{{ evals.table_evaluation_col_name }}</option>
-                                {% endfor %}
+{#                                {% for evals in current_eval %}#}
+                                    <option>{{ current_eval }}</option>
+{#                                {% endfor %}#}
                             </datalist>
                         </div>
                     </div>
@@ -357,14 +357,8 @@
         <div class="container-fluid">
             <div class="navbar-header">
 
-                <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left"><span
-                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                        class="icon-bar"></span><span class="icon-bar"></span></button>
-                <span class="d-lg-none navbar-right navbar-collapse-toggle"><a class="open-navbar-container"><i
-                        class="ft-more-vertical"></i></a></span><a id="navbar-fullscreen" href="javascript:;"
-                                                                   class="mr-2 display-inline-block apptogglefullscreen"><i
-                    class="ft-maximize blue-grey darken-4 toggleClass"></i>
-                <p class="d-none">fullscreen</p></a>
+                               <a href="{% url 'administrator' %}" class="logo-text float-left">返回</a>
+
 
             </div>
             <div class="navbar-container">
@@ -416,6 +410,8 @@
                                             <!-- Begin Blue Gantt -->
                                             <div class="card">
                                                 <div class="card-header">
+                                                                                                <h4 class="card-title">{{ current_eval }}</h4>
+
                                                     <button type="button" class="btn mr-1 btn-secondary"
                                                             data-toggle="modal"
                                                             data-target="#mymodal">添加新项目
@@ -428,6 +424,8 @@
                                             <!-- Begin Table -->
                                             <div class="card">
                                                 <div class="card-header">
+                                                                                                <h4 class="card-title">{{ current_eval }}</h4>
+
                                                     <button type="button" class="btn mr-1 btn-secondary"
                                                             data-toggle="modal"
                                                             data-target="#mymodal">添加新项目
