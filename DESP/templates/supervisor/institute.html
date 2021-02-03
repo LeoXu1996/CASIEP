@@ -735,13 +735,13 @@
                 'X-CSRFToken': $.cookie('csrftoken'),
             },
             success: function (data) {
-                window.location = 'institute';
-                alert.success(data.message);
-                console.log(data.message)
+                window.location = '';
+                alert(data.message);
+                {#console.log(data.message)#}
 
             },
             error: function (data) {
-                alert('表格内容错误，请重新检查并上传!');
+                alert(data.message);
 
             }
         });

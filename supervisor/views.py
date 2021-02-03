@@ -171,7 +171,7 @@ def organization_export(request):
     response['Content-Disposition'] = "attachment;filename=organization.csv"
     writer = csv.writer(response)
     org_csv = models.TableOrganization.objects.filter(~Q(table_organization_col_name='机构列表'))
-    writer.writerow(['Org_ID','Org_Name','Org_Code','Org_Address','Org_Post','Org_Field','Org_Parent_Name'])
+    writer.writerow(['Org_Name','Org_Code','Org_Address','Org_Post','Org_Field','Org_Parent_Name'])
     write_length= len(org_csv)
     write_position=0
     while write_position < write_length:
@@ -181,17 +181,17 @@ def organization_export(request):
             parent_org = parent_org_query.table_organization_col_name
             if parent_org == '机构列表':
                 try:
-                    writer.writerow([org_row.table_organization_col_id, org_row.table_organization_col_name,org_row.table_organization_col_code,
+                    writer.writerow([org_row.table_organization_col_name,org_row.table_organization_col_code,
                                      org_row.table_organization_col_address, org_row.table_organization_col_postcode,
-                                     org_row.table_organization_col_field])
+                                     org_row.table_organization_col_field,org_row.table_organization_col_parent_name_id])
                     write_position += 1
                 except:
                     return JsonResponse({'message':'根问题'})
             else:
                 try:
-                    writer.writerow([org_row.table_organization_col_id, org_row.table_organization_col_name,org_row.table_organization_col_code,
+                    writer.writerow([org_row.table_organization_col_name,org_row.table_organization_col_code,
                                      org_row.table_organization_col_address, org_row.table_organization_col_postcode,
-                                     org_row.table_organization_col_field, parent_org])
+                                     org_row.table_organization_col_field,org_row.table_organization_col_parent_name_id])
                     write_position += 1
                 except:
                     return JsonResponse({'message':'下级机构问题'})
@@ -613,7 +613,7 @@ def user_export(request):
     return response
 
 def excel_import_organization(filename):
-    file_excel = 'C:/Users/Administrator/Desktop/DESP-qzc/DESP/uploads/indicator/' + str(filename)  ##存储路径
+    file_excel = 'DESP/uploads/organization/' + str(filename)  ##存储路径
     # print(file_excel)
     col_name_index = 0
     by_name = u'Sheet1'
@@ -624,15 +624,20 @@ def excel_import_organization(filename):
     for row_num in range(1, n_rows):
             row = table.row_values(row_num)  # 获得每行的字段
             # seq = [row[0], row[1], row[2], row[3]]
-            seq_org = {'Org_ID': str(row[0]), 'Org_Name': row[1], 'Org_Address': row[2], 'Org_Post': str(row[3]),
-                       'Org_Field': row[4], 'Org_Parent_Name': row[5]}
+            # seq_org = {'Org_ID': str(row[0]), 'Org_Name': row[1], 'Org_Address': row[2], 'Org_Post': str(row[3]),
+            #            'Org_Field': row[4], 'Org_Parent_Name': row[5]}
+            seq_org = {'Org_Name': row[0], 'Org_Code':row[1],'Org_Address': row[2], 'Org_Post': str(row[3]),
+                       'Org_Field': row[4], 'Org_Parent_Name': str(row[5])}
+            # print(seq_org)
             row_dict[row_num] = seq_org
+
     data_org = {
             'code': '200',
             'msg': 'success',
             'data': row_dict
         }
     org_write = data_org['data']
+    # print(org_write)
     max_position = len(org_write)
         # print(max_position)
 
@@ -644,19 +649,25 @@ def excel_import_organization(filename):
                 # print(arrs)
                 orgname = arrs['Org_Parent_Name']
                 parent_id = models.TableOrganization.objects.get(table_organization_col_name=orgname)
-                models.TableOrganization.objects.create(table_organization_col_id=arrs['Org_ID'],
+                # print(parent_id)
+                models.TableOrganization.objects.create(
                                                         table_organization_col_name=arrs['Org_Name'],
+                                                        table_organization_col_code=arrs['Org_Code'],
                                                         table_organization_col_address=arrs['Org_Address'],
                                                         table_organization_col_postcode=arrs['Org_Post'],
                                                         table_organization_col_field=arrs['Org_Field'],
                                                         table_organization_col_parent_name=parent_id)
                 position = position + 1
             except:
-                return JsonResponse({'message': '检查填报内容'})
+                returndata={'message': '检查填报内容'}
+                return returndata
         else:
-            return JsonResponse({'message': '上传成功'})
+            returndata = {'message': '上传成功'}
+            return returndata
     except:
-        return JsonResponse({'message': '检查填报内容'})
+        returndata={'message': '检查填报内容'}
+        return returndata
+
     # # 调用方法 ---自定义模板函数 这里必须要return
     # return to_tableorg(data_org)
 
@@ -667,6 +678,7 @@ def upload_organization(request):
         return render(request, 'supervisor/institute.html')
     elif request.method == 'POST':
         obj = request.FILES.get('file_obj_org')
+        # print(obj)
         obj.name = time.strftime("%Y%m%d_%H_%M_%S_", time.localtime(time.time())) + obj.name
         # print(obj)
         if str(obj).endswith('.xlsx'):
@@ -674,7 +686,10 @@ def upload_organization(request):
             for chunk in obj.chunks():
                 f.write(chunk)
             f.close()
-            return excel_import_organization(obj)
+            print(obj)
+            message=excel_import_organization(obj)
+            # print(message)
+            return JsonResponse(message)
         else:
             return JsonResponse({'message': '文件格式错误！'})
 

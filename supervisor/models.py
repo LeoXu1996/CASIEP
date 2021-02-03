@@ -24,7 +24,7 @@ class TableOrganization(models.Model):
     #                                                null=True)  # Field name made lowercase.
     table_organization_col_field = models.CharField(db_column='Table_Organization_col_Field', max_length=50, blank=True,
                                                     null=True)  # Field name made lowercase.
-    table_organization_col_unicode = models.CharField(db_column='Table_Organization_col_Unicode', max_length=50, null=True)
+    # table_organization_col_unicode = models.CharField(db_column='Table_Organization_col_Unicode', max_length=50, null=True)
 
     class Meta:
         managed = True
