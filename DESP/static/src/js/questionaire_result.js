@@ -124,7 +124,7 @@ function submit() {
                         'questionclass': '单选',
                         'questiontype': questiontype_sbt,
                     },
-                    url: "/usr/answer_save",
+                    url: "/user/answer_save",
                 });
             });
             }else {
@@ -169,45 +169,45 @@ function ischecked(event) {
     }
 }
 
-function fillblank(){
-    $('[name="fillblank"]').each(function (){
-        str = $(this).text();
-        arr = str.split('_');
-
-        arr_blank = []; //找出有内容的index值
-        for(var i=0;i<arr.length;i++){
-            if(arr[i].length !== 0){
-                arr_blank.push(i);
-            }
-        }
-        blank_num = []; //根据index值判断有几个空
-        for(var i=0;i<arr_blank.length;i++){
-            if(i>0){
-                bk = arr_blank[i] - arr_blank[i-1];
-                if (bk > 1){
-                    blank_num.push(bk)
-                }
-            }
-        }
-        //将空置从数组中去掉
-        for(var i=0;i<arr.length;i++){
-            if(arr[i].length === 0){
-                arr.splice(i,1);
-                i = i-1;
-            }
-        }
-        $(this).hide();
-        for (var i=0; i<arr.length;i++) {
-            $(this).next().append(
-                "<h5 style=\"display: inline\">" + arr[i] + "</h5>\n"
-            );
-            if (i<blank_num.length){
-                $(this).next().append(
-                    "<input type='text' name=\"ques\" data-index ="+ i +">\n"
-                );
-            }
-        }
-
-    });
-
-}
+// function fillblank(){
+//     $('[name="fillblank"]').each(function (){
+//         str = $(this).text();
+//         arr = str.split('_');
+//
+//         arr_blank = []; //找出有内容的index值
+//         for(var i=0;i<arr.length;i++){
+//             if(arr[i].length !== 0){
+//                 arr_blank.push(i);
+//             }
+//         }
+//         blank_num = []; //根据index值判断有几个空
+//         for(var i=0;i<arr_blank.length;i++){
+//             if(i>0){
+//                 bk = arr_blank[i] - arr_blank[i-1];
+//                 if (bk > 1){
+//                     blank_num.push(bk)
+//                 }
+//             }
+//         }
+//         //将空置从数组中去掉
+//         for(var i=0;i<arr.length;i++){
+//             if(arr[i].length === 0){
+//                 arr.splice(i,1);
+//                 i = i-1;
+//             }
+//         }
+//
+//         for (var i=0; i<arr.length;i++) {
+//             $(this).parent().children().last().after(
+//                 "<h5 style=\"display: inline\">" + arr[i] + "</h5>\n"
+//             );
+//             if (i<blank_num.length){
+//                 $(this).parent().children().last().after(
+//                     "<input type='text' name=\"ques\" data-index ="+ i +">\n"
+//                 );
+//             }
+//         }
+//         $(this).hide();
+//     });
+//
+// }

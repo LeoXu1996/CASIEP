@@ -1,7 +1,8 @@
 from django.conf.urls import url
 
 from user.views import questionaire_submit
-from user.views import user,answer_save
+# from login.views import user
+from user.views import answer_save, user
 
 # router = DefaultRouter()
 # router.register(r'questionnaire', views.QuestionContentViewSet, basename='questionnaire')

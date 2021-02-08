@@ -3,6 +3,25 @@
 <html lang="en" class="loading">
 <head>
     <style>
+        .scroll {
+            width: 150%;                                     /*宽度*/
+            height: 200px;                                  /*高度*/
+            padding-left: 10px;                             /*层内左边距*/
+            padding-right: 10px;                            /*层内右边距*/
+            padding-top: 10px;                              /*层内上边距*/
+            padding-bottom: 10px;                           /*层内下边距*/
+            overflow-x: scroll;                             /*横向滚动条(scroll:始终出现;auto:必要时出现;具体参考CSS文档)*/
+            overflow-y: scroll;                             /*竖向滚动条*/
+
+            scrollbar-face-color: #D4D4D4;                  /*滚动条滑块颜色*/
+            scrollbar-hightlight-color: #ffffff;                /*滚动条3D界面的亮边颜色*/
+            scrollbar-shadow-color: #919192;                    /*滚动条3D界面的暗边颜色*/
+            scrollbar-3dlight-color: #ffffff;               /*滚动条亮边框颜色*/
+            scrollbar-arrow-color: #919192;                 /*箭头颜色*/
+            scrollbar-track-color: #ffffff;                 /*滚动条底色*/
+            scrollbar-darkshadow-color: #ffffff;                /*滚动条暗边框颜色*/
+        }
+
         .white_content {
             display: none;
             position: absolute;
@@ -13,7 +32,7 @@
             padding: 20px;
             border: 10px solid orange;
             background-color: white;
-            z-index:1002;
+            z-index: 1002;
             overflow: auto;
         }
     </style>
@@ -88,8 +107,8 @@
 <div class="wrapper nav-collapsed menu-collapsed">
     <nav class="navbar navbar-expand-lg navbar-light bg-faded">
         <div class="container-fluid">
-                        <div class="logo clearfix"><a href="{% url 'user' %}" class="logo-text float-left">返回</a>
-                        </div>
+            <div class="logo clearfix"><a href="{% url 'user' %}" class="logo-text float-left">返回</a>
+            </div>
 
             <div class="navbar-header">
                 <span class="d-lg-none navbar-right navbar-collapse-toggle">
@@ -286,6 +305,7 @@
         var question_type = q[i]['question_type'];
         var question_id = q[i]['question_id'];
         var question_class = q[i]['question_class'];
+        var question_answer = q[i]['question_answer'];
         if (q[i]['question_type'] === '选择题') {
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
@@ -302,25 +322,35 @@
                 "        </div>\n" +
                 "        <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"选择题\">\n" +
-                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value=" + question_id + ">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "        </div>" +
                 "    </form>\n" +
                 "</div><br>");
             for (var x = 0; x < JSON.parse(q[i]['content'])['answer'].length; x++) {
-                if(q[i]['question_class'] === '多选') {
+                if (q[i]['question_class'] === '多选') {
                     $('.div_question').last().find('.choice_list').append("" +
                         "<li class=\"mb-2\">\n" +
-                        "   <input type=\"checkbox\" name='choice' data-index = " + x + " onclick =\"ischecked(event)\">\n" +
+                        "   <input type=\"checkbox\" name='choice' data-index = " + x + " onclick=\"ischecked(event)\">\n" +
                         "   <span>" + JSON.parse(q[i]['content'])['answer'][x] + "</span>" +
                         "</li>\n");
-                }else {
+                } else {
                     $('.div_question').last().find('.choice_list').append("" +
                         "<li class=\"mb-2\">\n" +
                         "   <input type=\"radio\" name='choice' data-index = " + x + " onclick =\"ischecked(event)\">\n" +
                         "   <span>" + JSON.parse(q[i]['content'])['answer'][x] + "</span>" +
                         "</li>\n");
+                }
+                if (question_answer === 'NOANSWER404') {
+                } else {
+                    $('.div_question').last().find('.choice_list').find("input[name='choice']").each(function () {
+                        for (var i = 0; i < question_answer.length; i++) {
+                            if ($(this).attr("data-index") === question_answer[i]) {
+                                $(this).prop("checked", true);
+                            }
+                        }
+                    });
                 }
             }
         } else if (q[i]['question_type'] === '填空题') {
@@ -333,17 +363,80 @@
                 "           <div>\n" +
                 "               <h5 style=\"display: inline\" >" + len + '.' + ' ' + "</h5>" +
                 "               <h5 style=\"display: inline\" name=\"fillblank\" onclick=\"fillblank()\">" + text + " </h5>" +
-                "               <h5></h5>"+
                 "           </div>\n" +
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" value=\"填空题\">\n" +
-                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value=" + question_id + ">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
                 "   </form>\n" +
                 "</div><br>");
+            //填空题替换
+            $('[name="fillblank"]').each(function () {
+                str = $(this).text();
+                arr = str.split('_');
+
+                //找出有内容的index值,填空数为index长度-1
+                arr_blank = [];
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i].length !== 0) {
+                        arr_blank.push(i);
+                    }
+                }
+                //根据index值判断有几个"_"
+                blank_num = [];
+                for (var i = 0; i < arr_blank.length; i++) {
+                    if (i > 0) {
+                        bk = arr_blank[i] - arr_blank[i - 1];
+                        if (bk > 1) {
+                            blank_num.push(bk)
+                        }
+                    }
+                }
+                //将空从数组中去掉
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i].length === 0) {
+                        arr.splice(i, 1);
+                        i = i - 1;
+                    }
+                }
+                //添加题目
+                for (var i = 0; i < arr.length; i++) {
+                    $(this).parent().children().last().after(
+                        "<h5 style=\"display: inline\">" + arr[i] + "</h5>\n"
+                    );
+                    if (i < blank_num.length) {
+                        $(this).parent().children().last().after(
+                            "<input type='text' name=\"ques\" style=\"width: 20px\" data-index =" + i + ">\n"
+                        );
+                        valueofblank = blank_num[i];
+                        $(this).parent().children().last().css("width", function (index, value) {
+                            return parseFloat(value) * valueofblank;
+                        });
+                        $(this).parent().children("[name='ques']").css({
+                            "border-bottom": "#666 2px solid",
+                            "border-left-width": "0px",
+                            "border-right-width": "0px",
+                            "border-top-width": "0px",
+                        });
+                    }
+                }
+
+                $(this).remove();
+            });
+            //填入答案
+            $('.div_question').last().find("input[name='ques']").each(function (){
+                if (question_answer === 'NOANSWER404'){}else {
+                    dataindex = $(this).attr("data-index");
+                    var str = question_answer;
+                    re = new RegExp("'","g");
+                    var Newstr = str.replace(re, "\"");
+                    answer_list = JSON.parse(Newstr);
+                    $(this).val(answer_list[dataindex]);
+                }
+            });
         } else if (q[i]['question_type'] === '简答题') {
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
@@ -353,17 +446,21 @@
                 "           <div>\n" +
                 "               <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
                 "               <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + " </h5>\n" +
-                "               <textarea class=\'form-control\' name=\'answerarea\'>答题区域</textarea>" +
+                "               <textarea class=\'form-control\' name=\'answerarea\'></textarea>" +
                 "           </div>\n" +
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" value=\'简答题\'>\n" +
-                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value=" + question_id + ">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
                 "   </form>\n" +
                 "</div><br>");
+            //显示简答题答案
+            if (question_answer !== 'NOANSWER404') {
+                $('textarea').last().text(question_answer);
+            }
         } else if (q[i]['question_type'] === '矩阵题') {
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
@@ -387,7 +484,7 @@
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"矩阵题\">\n" +
-                "           <input style=\"display: none\" name=\"questionid\" + value="+ question_id +">\n" +
+                "           <input style=\"display: none\" name=\"questionid\" + value=" + question_id + ">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "           <input style=\"display: none\" name=\"questionclass\" + value= " + question_class + ">\n" +
                 "       </div>" +
@@ -404,20 +501,28 @@
                     "   </td>\n" +
                     "</tr>\n");
                 for (var z = 0; z < JSON.parse(q[i]['content'])['column'].length; z++) {
-                    if(q[i]['question_class'] === '单选') {
+                    if (q[i]['question_class'] === '单选') {
                         $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("" +
                             "<td><input type=\"radio\" name='choice' data-index = " + (y * x + z) + " onclick =\"ischecked(event)\"></td>");
-                        {#"<td><a class=\"ft-circle\"</a></td>");#}
-                    }else {
+                    } else {
                         $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("" +
                             "<td><input type=\"checkbox\" name='choice' data-index = " + (y * x + z) + " onclick =\"ischecked(event)\"></td>");
                     }
                 }
             }
+            if (question_answer === 'NOANSWER404') {} else {
+                $('.div_question').last().find('table').find("input[name='choice']").each(function () {
+                    for (var i = 0; i < question_answer.length; i++) {
+                        if ($(this).attr("data-index") === question_answer[i]) {
+                            $(this).prop("checked", true);
+                        }
+                    }
+                });
+            }
 
         } else if (q[i]['question_type'] === '表格题') {
-                            {#"   <form method=\"post\" class=\"form-horizontal\">\n" +#}
-                            {#"   </form>\n" +#}
+            {#"   <form method=\"post\" class=\"form-horizontal\">\n" +#}
+            {#"   </form>\n" +#}
             var len = $(".div_question").length + 1;
             $('#question_list').append("" +
                 "<div class=\"div_question\" id = " + len + ">\n" +
@@ -427,21 +532,24 @@
                 "               <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + "  </h5>\n" +
                 "           </div>\n" +
                 "           <div>\n" +
-                "               <table class=\"table table-responsive-sm text-left\" style=\"table-layout: fixed;\">\n" +
-                "                   <thead>\n" +
-                "                       <tr>\n" +
-                "                           <td></td>\n" +
-                "                       </tr>\n" +
-                "                   </thead>\n" +
-                "                   <tbody></tbody>\n" +
-                "               </table>" +
+                "               <tbody></tbody>\n" +
+                "               <div align=\"center\">\n" +
+                "                   <div class=\"scroll\">\n"+
+                "                       <table class=\"table table-responsive-sm text-left\" style=\"table-layout: fixed;\">\n" +
+                "                           <thead>\n" +
+                "                               <tr>\n" +
+                "                               </tr>\n" +
+                "                           </thead>\n" +
+                "                       </table>" +
+                "                   </div>"+
+                "               </div>"+
                 "           </div>" +
                 "       </div>\n" +
                 "       <div>\n" +
                 "           <input style=\"display: none\" name=\"questiontype\" + value=\"表格题\">\n" +
                 "           <input style=\"display: none\" name=\"questionnumber\" + value= " + len + ">\n" +
                 "       </div>" +
-                "       <div style=\"text-align:center;\">" +
+                "       <div style=\"text-align:center;\"><br>" +
                 "           <button class=\"btn mr-1 btn-secondary\" onclick=\"return download_form(" + q[i]['question_id'] + ")\">导出模板</button>" + "&emsp;&emsp;" +
                 "           <a class='btn mr-1 btn-secondary' href='JavaScript:void(0)' onclick='openUpload()'>上传表格</a>" +
                 "           <div id=\"light\" class=\"white_content\">" +
@@ -451,7 +559,7 @@
                 "               </form>" +
                 "               <a href = \"javascript:void(0)\" onclick = \"closeUpload()\">点这里关闭本窗口</a>" +
                 "           </div>" +
-                "       </div>"+
+                "       </div>" +
                 "</div><br>");
             for (var x = 0; x < JSON.parse(q[i]['content'])['column'].length; x++) {
                 $('.div_question').last().find('table').eq(0).children('thead').children().eq(0).append("" +
@@ -473,33 +581,48 @@
                     );
                 }
             }
+
+            if(question_answer === 'NOANSWER404'){}else {
+                var str = question_answer;
+                re = new RegExp("'", "g");
+                var Newstr = str.replace(re, "\"");
+                answer_list = JSON.parse(Newstr);
+                for (var x = 0; x < (answer_list['answer']).length; x++) {
+                    $('.div_question').last().find('tr').last().after("<tr></tr>");
+                    for (var y = 0; y < (answer_list['answer'][x]).length; y++) {
+                        $('.div_question').last().find('tr').last().append("" +
+                            "<td>" + answer_list['answer'][x][y] + "</td>\n"
+                        );
+                    }
+                }
+            }
         } else if (q[i]['question_type'] === '附件题') {
 
         }
     }
 
-
-
-    value_num = {{ page_num|safe }}
+    value_num =
+    {{ page_num|safe }}
 
     //上一页按钮
-    if(value_num != 0){
-        $("#pages").append("<li><a name=" + (value_num-1) + " class=\"\" onclick=\"preview(this.name)\" >上一页</a></li>")
-    }else{
+    if (value_num != 0) {
+        $("#pages").append("<li><a name=" + (value_num - 1) + " class=\"\" onclick=\"preview(this.name)\" >上一页</a></li>")
+    } else {
         $("#pages").append("<li><a name=" + (value_num) + " class=\"\" onclick=\"preview(this.name)\" >上一页</a></li>")
     }
 
     //显示题目
     for (i = 0; i < {{ preview_length|safe }}; i++) {
-        $("#pages").append("<li><a id=" + i + " class=\"\" onclick=\"preview(this.id)\" >" + (i+1) + "</a></li>")
+        $("#pages").append("<li><a id=" + i + " class=\"\" onclick=\"preview(this.id)\" >" + (i + 1) + "</a></li>")
 
     }
 
-    page_len = {{ preview_length|safe }}
+    page_len =
+    {{ preview_length|safe }}
     //下一页按钮
-    if(value_num != (page_len-1)){
-        $("#pages").append("<li><a name=" + (value_num+1) + " class=\"\" onclick=\"preview(this.name)\" >下一页</a></li>")
-    }else{
+    if (value_num != (page_len - 1)) {
+        $("#pages").append("<li><a name=" + (value_num + 1) + " class=\"\" onclick=\"preview(this.name)\" >下一页</a></li>")
+    } else {
         $("#pages").append("<li><a name=" + (value_num) + " class=\"\" onclick=\"preview(this.name)\" >下一页</a></li>")
     }
 
@@ -507,26 +630,29 @@
     document.getElementById(value_num).className = 'active'
 
     function preview(id) {
-        window.location.href = "{% url 'questions' %}?evalname="+ "{{ current_eval|safe }}"+ "&page="+ id
+        window.location.href = "{% url 'questions' %}?evalname=" + "{{ current_eval|safe }}" + "&page=" + id
     }
-    function download_form(value){
+
+    function download_form(value) {
         window.location.href = "{% url 'download_form' %}?form=" + value + ""
         return false
     }
 
-    function upload_form(){
+    function upload_form() {
 
     }
 </script>
 
 <script>
-    $(function(){})
-    function openUpload(){
+    $(function () {
+    })
+
+    function openUpload() {
         document.getElementById("light").style.display = 'block';
         {#document.getElementById("fade").style.display = 'block';#}
     }
 
-    function closeUpload(){
+    function closeUpload() {
         document.getElementById("light").style.display = 'none';
         {#document.getElementById("fade").style.display = 'none';#}
     }

@@ -11,6 +11,7 @@ from django.views import View
 from administrator.models import TableTimeliner, TableQuestionContent
 from login import models
 from login.forms import ForgetForm, ResetForm
+from login.models import TableUser
 from login.utils.email_send import send_register_email
 
 from supervisor.models import TableEvaluation
@@ -31,7 +32,7 @@ from django.utils.encoding import escape_uri_path
 def user(request):
     user_name = request.session['user_name']
     current_eval = request.GET.get('evalname')
-    # print(current_eval)
+    print(user_name)
     orgid = \
         models.TableUser.objects.filter(table_user_col_name=user_name).values_list('table_user_col_organization')[0][0]
     orgname = \
@@ -49,32 +50,50 @@ def user(request):
         list = []
         for i in range(0, len(questionaire_answer)):
             list.append(TableQuestionContent.objects.filter(table_question_content_col_indicator_id=group[i][0]))
+
+        user_id = TableUser.objects.get(table_user_col_name=user_name)
+
         if len(list) != 0:
             page = request.GET.get('page')
             question = []
             if page == None:
                 for x in list[0]:
+                    question_id = x.table_question_content_col_question_id
+                    if TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=user_id) & Q(
+                            table_question_result_col_question_id=question_id)).exists():
+                        question_answer = TableQuestionResult.objects.get(Q(table_question_result_col_user_id=user_id) & Q(table_question_result_col_question_id=question_id)).table_question_result_col_answer
+                        print(questionaire_answer)
+                    else:
+                        question_answer = "NOANSWER404"
                     question.append({
                         'question_id': x.table_question_content_col_question_id,
                         'question_type': x.table_question_content_col_question_type,
                         'content': x.table_question_content_col_content,
                         'indicator_id': x.table_question_content_col_indicator_id,
                         'question_class': x.table_question_content_col_question_class,
+                        'question_answer': question_answer,
                     })
                 page_num = 0
             else:
                 num = int(page)
                 for x in list[num]:
+                    question_id = x.table_question_content_col_question_id
+                    if TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=user_id) & Q(
+                            table_question_result_col_question_id=question_id)).exists():
+                        question_answer = TableQuestionResult.objects.get(Q(table_question_result_col_user_id=user_id) & Q(table_question_result_col_question_id=question_id)).table_question_result_col_answer
+                        print(question_answer)
+                    else:
+                        question_answer = "NOANSWER404"
                     question.append({
                         'question_id': x.table_question_content_col_question_id,
                         'question_type': x.table_question_content_col_question_type,
                         'content': x.table_question_content_col_content,
                         'indicator_id': x.table_question_content_col_indicator_id,
                         'question_class': x.table_question_content_col_question_class,
-
+                        'question_answer': question_answer,
                     })
                 page_num = num
-            # print(question)
+            print(question)
             return render(request, 'user/user.html',
                           { 'current_eval':current_eval,'question': question,
                            'preview_length': len(list),
@@ -117,21 +136,21 @@ def answer_save(request):
                 store_answer = store_answer.replace('\"', '')
                 store_answer = store_answer.split(",")
 
+        print(store_answer)
+
         store_question_id = request.POST['questionid']
         store_mark = 0
         tmp = TableQuestionContent.objects.get(table_question_content_col_question_id=store_question_id).table_question_content_col_marks
         if len(tmp) != 0:
             store_mark = tmp
         store_user_id = models.TableUser.objects.get(table_user_col_name=user_name).table_user_col_id
-        store_questionaire_id = 0
+        store_questionaire_id = TableQuestionContent.objects.get(table_question_content_col_question_id=store_question_id).table_question_content_col_indicator_id
 
-        if TableQuestionResult.objects.filter(
-            table_question_result_col_user_id=store_user_id).exists() & TableQuestionResult.objects.filter(
-            table_question_result_col_question_id=store_question_id).exists():
-            TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(
-                table_question_result_col_question_id=store_question_id)).update(
+        if TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(table_question_result_col_question_id=store_question_id)).exists():
+            TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(table_question_result_col_question_id=store_question_id)).update(
                 table_question_result_col_answer=store_answer,
                 table_question_result_col_marks=store_mark,
+                table_question_result_col_questionaire_id=store_questionaire_id
             )
         else:
             store_blank = ''.join(random.sample(string.ascii_letters + string.digits, 20))  # 创建blank随机名

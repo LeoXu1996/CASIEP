@@ -623,21 +623,31 @@ def excel_import_organization(filename):
     row_dict = {}
     for row_num in range(1, n_rows):
             row = table.row_values(row_num)  # 获得每行的字段
-            # seq = [row[0], row[1], row[2], row[3]]
-            # seq_org = {'Org_ID': str(row[0]), 'Org_Name': row[1], 'Org_Address': row[2], 'Org_Post': str(row[3]),
-            #            'Org_Field': row[4], 'Org_Parent_Name': row[5]}
-            seq_org = {'Org_Name': row[0], 'Org_Code':row[1],'Org_Address': row[2], 'Org_Post': str(row[3]),
-                       'Org_Field': row[4], 'Org_Parent_Name': str(row[5])}
-            # print(seq_org)
+            seq_org = {'Org_Name': row[0], 'Org_Address': row[1], 'Org_Post': str(row[2]),
+                       'Org_Field': row[3], 'Org_Parent_Name': row[4], 'Org_Code': row[5]}
+            try:
+                orgNamecheck = models.TableOrganization.objects.filter(table_organization_col_name=seq_org['Org_Name'])
+                orgCodecheck = models.TableOrganization.objects.filter(table_organization_col_code=seq_org['Org_Code'])
+            except:
+                returndata = {'message': '检查填报内容'}
+                return returndata
+            else:
+                if orgCodecheck.exists():
+                    print(str(seq_org['Org_Code']))
+                    returndata = {'message': '编码 '+str(seq_org['Org_Code'])+' 已存在, 对应的单位名称是'+
+                                  orgCodecheck[0].table_organization_col_name+', 请使用其它编码'}
+                    return returndata
+                elif orgNamecheck.exists():
+                    print(str(seq_org['Org_Name']))
+                    returndata = {'message': '单位名称: “'+str(seq_org['Org_Name'])+'” 已存在，请通过[修改机构]功能直接对该单位信息进行修改'}
+                    return returndata
             row_dict[row_num] = seq_org
-
     data_org = {
             'code': '200',
             'msg': 'success',
             'data': row_dict
         }
     org_write = data_org['data']
-    # print(org_write)
     max_position = len(org_write)
         # print(max_position)
 
@@ -649,23 +659,25 @@ def excel_import_organization(filename):
                 # print(arrs)
                 orgname = arrs['Org_Parent_Name']
                 parent_id = models.TableOrganization.objects.get(table_organization_col_name=orgname)
-                # print(parent_id)
-                models.TableOrganization.objects.create(
-                                                        table_organization_col_name=arrs['Org_Name'],
-                                                        table_organization_col_code=arrs['Org_Code'],
+                models.TableOrganization.objects.create(table_organization_col_name=arrs['Org_Name'],
                                                         table_organization_col_address=arrs['Org_Address'],
                                                         table_organization_col_postcode=arrs['Org_Post'],
                                                         table_organization_col_field=arrs['Org_Field'],
-                                                        table_organization_col_parent_name=parent_id)
+                                                        table_organization_col_parent_name=parent_id,
+                                                        table_organization_col_code=arrs['Org_Code'])
                 position = position + 1
             except:
                 returndata={'message': '检查填报内容'}
+                print(returndata)
                 return returndata
-        else:
-            returndata = {'message': '上传成功'}
-            return returndata
     except:
         returndata={'message': '检查填报内容'}
+        print(returndata)
+
+        return returndata
+    else:
+        returndata = {'message': '上传成功'}
+        print(returndata)
         return returndata
 
     # # 调用方法 ---自定义模板函数 这里必须要return
@@ -678,7 +690,6 @@ def upload_organization(request):
         return render(request, 'supervisor/institute.html')
     elif request.method == 'POST':
         obj = request.FILES.get('file_obj_org')
-        # print(obj)
         obj.name = time.strftime("%Y%m%d_%H_%M_%S_", time.localtime(time.time())) + obj.name
         # print(obj)
         if str(obj).endswith('.xlsx'):
@@ -686,20 +697,22 @@ def upload_organization(request):
             for chunk in obj.chunks():
                 f.write(chunk)
             f.close()
-            print(obj)
             message=excel_import_organization(obj)
-            # print(message)
+            os.remove(os.path.join('DESP', 'uploads', 'organization', obj.name))
             return JsonResponse(message)
         else:
             return JsonResponse({'message': '文件格式错误！'})
 
 
 def download_organization(request):
-    # pdb.set_trace()
-    file = open('DESP/uploads/organization/TableOrg_Import.xlsx', 'rb')
-    response = HttpResponse(file)
-    response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
-    response['Content-Disposition'] = 'attachment;filename="TableOrg_Import.xlsx"'
+    try:
+        # pdb.set_trace()
+        file = open('DESP/uploads/organization/TableOrg_Import.xlsx', 'rb')
+        response = HttpResponse(file)
+        response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
+        response['Content-Disposition'] = 'attachment;filename="TableOrg_Import.xlsx"'
+    except:
+        return HttpResponse("该文件不存在")
     return response
 
 

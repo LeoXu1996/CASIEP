@@ -382,7 +382,7 @@
         var required = q[i]['required'];
         if (q[i]['question_type'] === '选择题') {
             var len = $(".div_question").length + 1;
-            $('#question_list').append("                                                <div class=\"div_question\" id = " + len + ">\n" +
+            $('#question_list').append("        <div class=\"div_question\" id = " + len + ">\n" +
                 "                                                    <form method=\"post\" class=\"form-horizontal\">\n" +
                 "                                                        <div onclick=\"toggle_edit(event)\" class='toggle'>\n" +
                 "                                                            <div>\n" +
@@ -667,95 +667,87 @@
             $('.div_question').last().find("input[name='points']").val(marks);
         } else if (q[i]['question_type'] === '矩阵题') {
             var len = $(".div_question").length + 1;
-            $('#question_list').append("                                <div class=\"div_question\" id = " + len + ">\n" +
-                "                                                    <form method=\"post\" class=\"form-horizontal\">\n" +
-                "                                                        <div onclick=\"toggle_edit(event)\" class='toggle'>\n" +
-                "                                                            <div>\n" +
-                "                                                                <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
-                "                                                                <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + " </h5>\n" +
-                "                                                                <input type=\'button\' class=\"btn mr-1 btn-secondary\"\n" +
-                "                                                                        onclick='delquestion(event)' value=\'del\'>\n" +
-                "                                                            </div>\n" +
-                "                                                            <div>\n" +
-                "                                                                <table class=\"table table-responsive-sm text-left\"  style=\"table-layout:fixed;\">\n" +
-                "                                                                    <thead>\n" +
-                "                                                                    <tr>\n" +
-                "                                                                        <td></td>\n" +
-                "                                                                    </tr>\n" +
-                "                                                                    </thead>\n" +
-                "                                                                    <tbody>\n" +
-                "                                                                    </tbody>\n" +
-                "                                                                </table>\n" +
-                "                                                            </div>\n" +
-                "                                                        </div>\n" +
-                "                                                        <div>\n" +
-                "                                                            <input style=\"display: none\" name=\"questiontype\"\n" +
-                "                                                                   value=" + question_type + ">\n" +
-                "<input style=\"display: none\" name=\"questionnumber\"\n" +
-                "                                                                   value= " + question_number + ">\n" +
-                "<input style=\'display: none\' name='indicatorID\'\n value=" + indicator_id + ">" +
-                "                                                        <textarea class=\"form-control\"\n" +
-                "                                                                  onkeyup=\"SwapTxt(event)\"\n" +
-                "                                                                  name=\"choicetitle\">" + JSON.parse(q[i]['content'])['title'] + "</textarea>\n" +
-                "                                                            <div class=\"row\" style=\"margin-top: 15px\">\n" +
-                "                                                                <div class=\"col-md-9\">\n" +
-                "                                                        <span><select class=\"form-control-sm\" name=\"class\">\n" +
-                "                                                            <option>单选</option>\n" +
-                "                                                            <option>多选</option>\n" +
-                "                                                        </select>\n" +
-                "                                                            </span>\n" +
-                "                                                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input\n" +
-                "                                                                            name=\"required\"\n" +
-                "                                                                            type=\"checkbox\"><span>必答题</span></span>\n" +
-                "                                                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input\n" +
-                "                                                                            name=\"attachment\"\n" +
-                "                                                                            type=\"checkbox\"><span>含附件上传</span></span>\n" +
-                "                                                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select\n" +
-                "                                                                            name=\"markmethod\" class=\"form-control-sm\">\n" +
-                "                                                            <option>手动打分</option>\n" +
-                "                                                        </select></span>\n" +
-                "                                                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input\n" +
-                "                                                                            name=\"importanswer\"\n" +
-                "                                                                            type=\"checkbox\"><span>导入答案</span></span>\n" +
-                "                                                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>满分: </span><input type=\"text\" name=\"points\" size=\"10\"></span>\n" +
+            $('#question_list').append("" +
+                "<div class=\"div_question\" id = " + len + ">\n" +
+                "    <form method=\"post\" class=\"form-horizontal\">\n" +
+                "       <div onclick=\"toggle_edit(event)\" class='toggle'>\n" +
+                "           <div>\n" +
+                "               <h5 style=\"display: inline\">" + len + '.' + ' ' + "</h5>\n" +
+                "               <h5 style=\"display: inline\">" + JSON.parse(q[i]['content'])['title'] + " </h5>\n" +
+                "               <input type=\'button\' class=\"btn mr-1 btn-secondary\"\n" +
+                "                   onclick='delquestion(event)' value=\'del\'>\n" +
+                "           </div>\n" +
+                "           <div>\n" +
+                "               <table class=\"table table-responsive-sm text-left\"  style=\"table-layout:fixed;\">\n" +
+                "                   <thead>\n" +
+                "                       <tr>\n" +
+                "                           <td></td>\n" +
+                "                       </tr>\n" +
+                "                   </thead>\n" +
+                "                   <tbody>\n" +
+                "                   </tbody>\n" +
+                "               </table>\n" +
+                "           </div>\n" +
+                "        </div>\n" +
+                "        <div>\n" +
+                "           <input style=\"display: none\" name=\"questiontype\" value=" + question_type + ">\n" +
+                "           <input style=\"display: none\" name=\"questionnumber\" value= " + question_number + ">\n" +
+                "           <input style=\"display: none\" name='indicatorID\'\n value=" + indicator_id + ">" +
+                "           <textarea class=\"form-control\" onkeyup=\"SwapTxt(event)\" name=\"choicetitle\">" + JSON.parse(q[i]['content'])['title'] +
+                "           </textarea>\n" +
+                "           <div class=\"row\" style=\"margin-top: 15px\">\n" +
+                "               <div class=\"col-md-9\">\n" +
+                "                   <span>" +
+                "                       <select class=\"form-control-sm\" name=\"class\">\n" +
+                "                           <option>单选</option>\n" +
+                "                           <option>多选</option>\n" +
+                "                       </select>\n" +
+                "                   </span>\n" +
+                "                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                "                       <input name=\"required\" type=\"checkbox\"><span>必答题</span></span>\n" +
+                "                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                "                       <input name=\"attachment\" type=\"checkbox\"><span>含附件上传</span></span>\n" +
+                "                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                "                       <select name=\"markmethod\" class=\"form-control-sm\">\n" +
+                "                           <option>手动打分</option>\n" +
+                "                       </select></span>\n" +
+                "                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                "                       <input name=\"importanswer\" type=\"checkbox\"><span>导入答案</span></span>\n" +
+                "                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                "                       <span>满分: </span><input type=\"text\" name=\"points\" size=\"10\"></span>\n" +
                 "                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n" +
-                "                                                                </div>\n" +
-                "                                                            </div>\n" +
-                "                                                            <div style=\"margin-top: 15px;display: flex;flex-direction: row\">\n" +
-                "<div style='float: left;width:50%'>" +
-                "                                                                <textarea onkeyup=\"matrix_title_split(event)\"\n" +
-                "                                                                          placeholder=\"编辑行\"\n" +
-                "                                                                          class=\"form-control\"\n" +
+                "               </div>\n" +
+                "           </div>\n" +
+                "           <div style=\"margin-top: 15px;display: flex;flex-direction: row\">\n" +
+                "               <div style='float: left;width:50%'>" +
+                "                   <textarea onkeyup=\"matrix_title_split(event)\" placeholder=\"编辑行\" class=\"form-control\"\n" +
                 "                                                                   name=\"row\" style = \"width: 90%; height: 100%\"></textarea>\n" +
-                "</div>" +
-                "<div style='float: left;width: 50%'>" +
-                "                                                                <table class=\"table table-responsive-sm text-left\"   style=\"table-layout: fixed\">\n" +
-                "                                                                    <tbody>\n" +
-                "                                                                    <tr>\n" +
-                "                                                                        <td>选项文字</td>\n" +
-                "                                                                        <td>允许填空</td>\n" +
-                "                                                                        <td>上移下移</td>\n" +
-                "                                                                    </tr>\n" +
-                "                                                                    </tbody>\n" +
-                "                                                                </table>\n" +
-                "                                                                     <div style=\"margin-left: 10px;margin-bottom: 15px\">\n" +
-                "                                                                    <a class=\"addchoice\"\n" +
-                "                                                                       onclick=\"addcolumn(event)\"><span>添加选项</span></a>\n" +
-                "                                                                </div>\n" +
-                "</div>" +
-                "<div style='clear: both'></div>" +
-                "                                                            </div>\n" +
-                "<div style='margin-top: 15px'></div>" +
-                "                                                            <input type=\"button\"\n" +
-                "                                                                   class=\"btn btn-outline-danger btn-lg  btn-round\"\n" +
+                "               </div>" +
+                "               <div style='float: left;width: 50%'>" +
+                "                   <table class=\"table table-responsive-sm text-left\"   style=\"table-layout: fixed\">\n" +
+                "                       <tbody>\n" +
+                "                           <tr>\n" +
+                "                               <td>选项文字</td>\n" +
+                "                               <td>允许填空</td>\n" +
+                "                               <td>上移下移</td>\n" +
+                "                           </tr>\n" +
+                "                       </tbody>\n" +
+                "                   </table>\n" +
+                "                   <div style=\"margin-left: 10px;margin-bottom: 15px\">\n" +
+                "                       <a class=\"addchoice\" onclick=\"addcolumn(event)\"><span>添加选项</span></a>\n" +
+                "                   </div>\n" +
+                "               </div>" +
+                "               <div style='clear: both'></div>" +
+                "           </div>\n" +
+                "           <div style='margin-top: 15px'></div>" +
+                "           <input type=\"button\" class=\"btn btn-outline-danger btn-lg  btn-round\"\n" +
                 "                                                                   value=\"保存\"\n" +
                 "                                                                   onclick=\"hide_edit(event)\">\n" +
-                "                                                            <input type=\"button\"\n" +
-                "                                                                   class=\"btn btn-outline-danger btn-lg  btn-round\"\n" +
+                "           <input type=\"button\" class=\"btn btn-outline-danger btn-lg  btn-round\"\n" +
                 "                                                                   value=\"清空\" onclick='clearForm_matrix(event)'>\n" +
-                "                                                        </div>\n" +
-                "                                                    </form>\n" +
-                "                                                </div>");
+                "       </div>\n" +
+                "   </form>\n" +
+                "</div>");
             variableID(10);
             if (required === 'on') {
                 $('.div_question').last().find("input[name='required']")[0].checked = true
@@ -778,33 +770,36 @@
                 $('.div_question').last().find('table').eq(0).children('thead').children().eq(0).append(" <td>" + JSON.parse(q[i]['content'])['column'][x] + "</td>\n")
             }
             for (var y = 0; y < JSON.parse(q[i]['content'])['rows'].length; y++) {
-                $('.div_question').last().find('table').eq(0).children('tbody').append("<tr>\n" +
-                    "                                                                        <td>" + JSON.parse(q[i]['content'])['rows'][y] + "\n" +
-                    "                                                                        </td>\n" +
-                    "                                                                    </tr>\n");
+                $('.div_question').last().find('table').eq(0).children('tbody').append("" +
+                    "<tr>\n" +
+                    "    <td>" + JSON.parse(q[i]['content'])['rows'][y] + "\n" +
+                    "    </td>\n" +
+                    "</tr>\n");
                 for (var z = 0; z < JSON.parse(q[i]['content'])['column'].length; z++) {
                     $('.div_question').last().find('table').eq(0).children('tbody').children().eq(y).append("<td><a class=\"ft-circle\"</a></td>")
                 }
             }
-            $('.div_question').last().find("textarea[name='row']").val(JSON.parse(q[i]['content'])['rows']); //换行问题
+            var text = "";
+            for(var x=0;x<(JSON.parse(q[i]['content'])['rows']).length;x++){
+                text = text + JSON.parse(q[i]['content'])['rows'][x] + "\n";
+            }
+            $('.div_question').last().find("textarea[name='row']").val(text); //换行问题
             for (var a = 0; a < JSON.parse(q[i]['content'])['column'].length; a++) {
-                $('.div_question').last().find('table').eq(1).children('tbody').append("                                                                    <tr>\n" +
-                    "                                                                        <td>\n" +
-                    "                                                                            <input type=\"text\" name=\"choice\"\n" +
-                    "                                                                                   onkeyup=\"matrix_text_swap(event)\" value=" + JSON.parse(q[i]['content'])['column'][a] + ">" +
-                    "                                                                            <a><i class=\"ft-minus-circle\"\n" +
-                    "                                                                                  onclick=\"minuscolumn(event)\"></i></a>\n" +
-                    "                                                                        </td>\n" +
-                    "                                                                        <td>\n" +
-                    "                                                                            <input name=\"allowblank\" type=\"button\" class=\"btn mr-1 btn-info\" value=\'增加填空符\' onclick=\"addblank(event,'matrix')\"\n" +
-                    "                                                                        </td>\n" +
-                    "                                                                        <td>\n" +
-                    "                                                                            <a onclick=\"moveleft(event)\"><i\n" +
-                    "                                                                                    class=\"ft-arrow-up\"></i></a>\n" +
-                    "                                                                            <a onclick=\"moveright(event)\"><i\n" +
-                    "                                                                                    class=\"ft-arrow-down\"></i></a>\n" +
-                    "                                                                        </td>\n" +
-                    "                                                                    </tr>\n")
+                $('.div_question').last().find('table').eq(1).children('tbody').append("" +
+                    "<tr>\n" +
+                    "    <td>\n" +
+                    "        <input type=\"text\" name=\"choice\"\n" +
+                    "            onkeyup=\"matrix_text_swap(event)\" value=" + JSON.parse(q[i]['content'])['column'][a] + ">" +
+                    "        <a><i class=\"ft-minus-circle\" onclick=\"minuscolumn(event)\"></i></a>\n" +
+                    "    </td>\n" +
+                    "    <td>\n" +
+                    "        <input name=\"allowblank\" type=\"button\" class=\"btn mr-1 btn-info\" value=\'增加填空符\' onclick=\"addblank(event,'matrix')\"\n" +
+                    "    </td>\n" +
+                    "    <td>\n" +
+                    "        <a onclick=\"moveleft(event)\"><i class=\"ft-arrow-up\"></i></a>\n" +
+                    "        <a onclick=\"moveright(event)\"><i class=\"ft-arrow-down\"></i></a>\n" +
+                    "    </td>\n" +
+                    "</tr>\n");
             }
         } else if (q[i]['question_type'] === '表格题') {
             var len = $(".div_question").length + 1;
@@ -898,7 +893,7 @@
                 $('.div_question').last().find('table').eq(0).children('thead').children().eq(0).append(" <td>" + JSON.parse(q[i]['content'])['column'][x] + "</td>\n")
             }
             for (var y = 0; y < JSON.parse(q[i]['content'])['rows'].length; y++) {
-                $('.div_question').last().find('table').eq(0).children('tbody').append("                                                                <tr>\n" +
+                $('.div_question').last().find('table').eq(0).children('tbody').append("<tr>\n" +
                     "                                                                    <td>" + JSON.parse(q[i]['content'])['rows'][y] +
                     "                                                                    </td> " +
                     "                                                                </tr>\n"
@@ -908,7 +903,11 @@
                 }
             }
             $('.div_question').last().find("textarea[name='row']").val(JSON.parse(q[i]['content'])['rows']); //换行问题
-            $('.div_question').last().find("textarea[name='column']").val(JSON.parse(q[i]['content'])['column']);
+            var text = "";
+            for(var x=0;x<(JSON.parse(q[i]['content'])['column']).length;x++){
+                text = text + JSON.parse(q[i]['content'])['column'][x] + "\n";
+            }
+            $('.div_question').last().find("textarea[name='column']").val(text);
         } else if (q[i]['question_type'] === '附件题') {
 
         }

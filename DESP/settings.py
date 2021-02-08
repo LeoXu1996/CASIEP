@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+import configparser
 import os
 import pymysql
 
@@ -93,19 +94,40 @@ WSGI_APPLICATION = 'DESP.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# dir_now = os.path.dirname(os.path.dirname(os.path.abspath("settings.py")))
+# conf = configparser.ConfigParser()
+# conf.read(dir_now+'/config.ini')
+# secs = conf.sections()
+# print(secs)
+# opts = conf.options('global')
+# kvs = conf.items('global')
+
+get_dir = os.path.dirname(os.path.dirname(os.path.abspath('manage.py')))
+# print(type(get_dir))
+cf = configparser.ConfigParser()
+di=cf.read(get_dir+'/DESP/DESP/config/config_docker.txt')
+print(di)
+kvs = cf.items('db')
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'dj_db_conn_pool.backends.mysql',
         # 'NAME': 'Data_evaluation',
-        'NAME': 'de',
-        'USER': 'casdev',
-        'PASSWORD': '123456',
+        # 'NAME': 'de',
+        # 'USER': 'casdev',
+        # # # 'PASSWORD': '123456',
         # 'PASSWORD': 'iepDev<Cas&001',
-        'HOST': 'localhost',
+        # # # 'HOST': 'localhost',
         # 'HOST': '10.10.11.39',
-        #'HOST': '10.10.11.40',
-        # 'HOST': '159.226.186.34',
-        'PORT': '3306',
+        # # #'HOST': '10.10.11.40',
+        # # # 'HOST': '159.226.186.34',
+        # 'PORT': '3306',
+        'NAME': kvs[0][1],
+        'USER': kvs[1][1],
+        'PASSWORD': kvs[2][1],
+        'HOST': kvs[3][1],
+        'PORT': kvs[4][1],
     }
 }
 

@@ -46,4 +46,6 @@ urlpatterns = [
     url(r'uploadFile', views.upload_file, name='upload_file'),  # 项目timeliner上传文件
     url(r'^fp/', include('django_drf_filepond.urls')),
     url(r'^download_form/', login_views.download_form, name='download_form'),
+    url(r'uploadExcel', login_views.upload_xlsx, name='upload_xlsx'),  # user上传文件
+
 ]

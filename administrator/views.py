@@ -685,7 +685,7 @@ def timeliner_delete(request):
 ## 上传功能
 def excel_import_indicator(filename, this_eval_name, this_admin_name):
     # pdb.set_trace()
-    file_excel = 'C:/Users/DELL/Desktop/DESP/DESP/uploads/indicator/' + str(filename)  ##存储绝对路径（随时修改）
+    file_excel = 'DESP/uploads/indicator/' + str(filename)  ##存储绝对路径（随时修改）
     by_name = u'Sheet1'
     data = xlrd.open_workbook(file_excel)  # 打开excel
     table = data.sheet_by_name(by_name)  # 表单名称

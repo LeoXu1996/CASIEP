@@ -722,6 +722,10 @@
         var csrf = $('input[name=csrfmiddlewaretoken]').val();
         formdata.append('file_obj_org', file);
         formdata.append('csrfmiddlewaretoken', csrf);
+        if(file===undefined){ //判断是否有附件
+            alert('请选择文件');
+            return false;
+        }
         $.ajax({
             type: 'POST',
             async: false,
@@ -735,13 +739,12 @@
                 'X-CSRFToken': $.cookie('csrftoken'),
             },
             success: function (data) {
-                window.location = '';
+                window.location = 'institute';
                 alert(data.message);
-                {#console.log(data.message)#}
-
+                console.log(data.message)
             },
             error: function (data) {
-                alert(data.message);
+                alert('表格内容错误，请重新检查并上传!');
 
             }
         });

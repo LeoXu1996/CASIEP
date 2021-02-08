@@ -36,3 +36,2630 @@ Watching for file changes with StatReloader
 [21/Dec/2020 22:54:33] "GET /user?page=2 HTTP/1.1" 200 30052
 [21/Dec/2020 22:54:42] "GET /user?page=5 HTTP/1.1" 200 30121
 [21/Dec/2020 22:54:43] "GET /user?page=7 HTTP/1.1" 200 31119
+Watching for file changes with StatReloader
+[05/Feb/2021 15:47:00] "GET / HTTP/1.1" 200 7815
+[05/Feb/2021 15:47:01] "GET /static/app-assets/js/echarts.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:01] "GET /static/app-assets/js/dark.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:01] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:01] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 304 0
+[05/Feb/2021 15:47:01] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:01] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[05/Feb/2021 15:47:02] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[05/Feb/2021 15:47:04] "GET /login HTTP/1.1" 302 0
+[05/Feb/2021 15:47:04] "GET /user HTTP/1.1" 200 13034
+[05/Feb/2021 15:47:04] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:04] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:04] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:04] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/css/app.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/layui/css/layui.css HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 304 0
+[05/Feb/2021 15:47:05] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 304 0
+[05/Feb/2021 15:47:06] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 304 0
+[05/Feb/2021 15:47:10] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 304 0
+[05/Feb/2021 15:47:12] "GET /logout HTTP/1.1" 302 0
+[05/Feb/2021 15:47:12] "GET / HTTP/1.1" 200 7815
+[05/Feb/2021 15:47:12] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[05/Feb/2021 15:47:12] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[05/Feb/2021 15:48:36] "GET /login HTTP/1.1" 200 8270
+[05/Feb/2021 15:48:36] "GET /captchaimage/abc3b8efe26e7a4cd95d90a5ae923c899d735990/ HTTP/1.1" 200 4758
+[05/Feb/2021 15:48:52] "POST /login HTTP/1.1" 200 8435
+[05/Feb/2021 15:48:52] "GET /captchaimage/336e2a04f6cc4d3b61dc39c6e1a7dcba857fc7e3/ HTTP/1.1" 200 3653
+[05/Feb/2021 15:48:59] "POST /login HTTP/1.1" 200 8435
+[05/Feb/2021 15:48:59] "GET /captchaimage/9bc47d01f67f4949e566cd44527dbe4ac18f2f0f/ HTTP/1.1" 200 4485
+[05/Feb/2021 15:49:08] "POST /login HTTP/1.1" 200 8435
+[05/Feb/2021 15:49:08] "GET /captchaimage/5aacde279a4ed9ed6203f873169cc11a517875f7/ HTTP/1.1" 200 4562
+[05/Feb/2021 15:49:19] "POST /login HTTP/1.1" 302 0
+[05/Feb/2021 15:49:20] "GET /supervisor HTTP/1.1" 200 77163
+[05/Feb/2021 15:49:21] "GET /supervisor HTTP/1.1" 200 77163
+[05/Feb/2021 15:49:24] "GET /supervisor/institute HTTP/1.1" 200 66316
+[05/Feb/2021 15:49:25] "GET /supervisor/institute HTTP/1.1" 200 66316
+[05/Feb/2021 15:49:27] "GET /supervisor/people HTTP/1.1" 200 91738
+[05/Feb/2021 15:49:29] "GET /supervisor/institute HTTP/1.1" 200 66316
+[05/Feb/2021 15:49:31] "GET /supervisor/institute HTTP/1.1" 200 66316
+[05/Feb/2021 15:50:02] "POST /supervisor/upload_organization HTTP/1.1" 200 169
+[05/Feb/2021 15:50:02] "GET /supervisor/institute HTTP/1.1" 200 66316
+[05/Feb/2021 15:50:10] "GET /supervisor/institute HTTP/1.1" 200 66316
+[07/Feb/2021 09:30:09] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/dark.js HTTP/1.1" 200 3832
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 200 17591
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 200 8710
+[07/Feb/2021 09:30:10] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 200 70142
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 09:30:10] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 09:30:10] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 09:30:12] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 09:30:12] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 09:30:12] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 09:30:12] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 09:30:12] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 09:30:12] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 09:30:12] "GET /captchaimage/2ea3ce38ec52496a5990baa4197ba7e067da1d85/ HTTP/1.1" 200 4727
+[07/Feb/2021 09:30:12] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 09:30:12] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 09:30:12] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:30:17] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 09:30:17] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:30:17] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 09:30:17] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 09:30:17] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 09:30:17] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 09:30:17] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 09:30:17] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 09:30:18] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 09:30:19] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:30:19] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[07/Feb/2021 09:30:19] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 09:30:19] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 09:30:19] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[07/Feb/2021 09:30:19] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 09:30:19] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[07/Feb/2021 09:30:24] "POST /user/answer_save HTTP/1.1" 200 19
+[07/Feb/2021 09:30:26] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:30:33] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:30:33] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:30:33] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[07/Feb/2021 09:30:36] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:30:37] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:30:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:30:40] "POST /user/answer_save HTTP/1.1" 200 19
+[07/Feb/2021 09:30:43] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:30:43] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:30:47] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:31:23] "POST /user/answer_save HTTP/1.1" 200 19
+[07/Feb/2021 09:31:27] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:31:27] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 09:31:27] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[07/Feb/2021 09:31:27] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 09:31:27] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 09:31:27] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 09:31:27] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 09:31:27] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 09:31:27] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 09:31:27] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 09:31:27] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 09:31:27] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 09:31:27] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[07/Feb/2021 09:31:27] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 09:31:27] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 09:31:28] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 09:31:28] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 09:31:28] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 09:31:29] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[07/Feb/2021 09:31:29] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:31:29] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:31:37] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:31:38] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:31:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:31:39] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:33:28] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:28] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:33:36] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:36] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:37] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:37] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:37] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:37] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:37] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:38] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:38] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:38] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:38] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:38] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:38] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:38] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[07/Feb/2021 09:33:38] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:39] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:39] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:33:39] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:33:40] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 09:33:41] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 09:33:41] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 09:33:41] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 09:33:41] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 09:33:42] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 09:33:42] "GET /captchaimage/e5c2dc458973593492dd35e6185644fbaca0a453/ HTTP/1.1" 200 4928
+[07/Feb/2021 09:33:49] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 09:33:49] "GET /administrator HTTP/1.1" 200 13845
+[07/Feb/2021 09:33:53] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 09:33:53] "GET /static/app-assets/img/logo.png HTTP/1.1" 200 1861
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/jquery.ztree.all.min.js HTTP/1.1" 200 67966
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/fuzzysearch.js HTTP/1.1" 200 6122
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/jquery.ztree.exhide.min.js HTTP/1.1" 200 5308
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/csrf.js HTTP/1.1" 200 1690
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/jquery.ztree.core.js HTTP/1.1" 200 74711
+[07/Feb/2021 09:33:53] "GET /static/ztreejs/jquery.custom.js HTTP/1.1" 200 3788
+[07/Feb/2021 09:33:53] "GET /static/src/js/standard.js HTTP/1.1" 200 42
+[07/Feb/2021 09:33:53] "GET /static/ztreecss/zTreeStyle/img/zTreeStandard.png HTTP/1.1" 200 11173
+[07/Feb/2021 09:33:53] "GET /static/ztreecss/zTreeStyle/img/line_conn.gif HTTP/1.1" 200 45
+[07/Feb/2021 09:33:53] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 09:33:55] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:33:55] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:33:56] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=536 HTTP/1.1" 200 44019
+[07/Feb/2021 09:33:56] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=536 HTTP/1.1" 200 44019
+[07/Feb/2021 09:33:58] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:33:58] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:33:59] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=536 HTTP/1.1" 200 44019
+[07/Feb/2021 09:33:59] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=536 HTTP/1.1" 200 44019
+[07/Feb/2021 09:34:00] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=534 HTTP/1.1" 200 43903
+[07/Feb/2021 09:34:00] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=534 HTTP/1.1" 200 43903
+[07/Feb/2021 09:34:01] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:34:01] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[07/Feb/2021 09:34:02] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69556
+[07/Feb/2021 09:34:02] "GET /static/app-assets/css/questionaire.css HTTP/1.1" 200 428
+[07/Feb/2021 09:34:16] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[07/Feb/2021 09:34:17] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69558
+[07/Feb/2021 09:34:18] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:34:23] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 09:34:23] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 09:34:23] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 09:34:24] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 09:34:24] "GET /captchaimage/f61ed27e948c3f1c6bc83f10ed89704e5a7a3718/ HTTP/1.1" 200 4507
+[07/Feb/2021 09:34:29] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 09:34:29] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:34:31] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:34:33] "POST /user/answer_save HTTP/1.1" 200 19
+[07/Feb/2021 09:34:35] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:34:36] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:34:37] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:34:37] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:34:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:34:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:34:43] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[07/Feb/2021 09:35:00] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 09:35:00] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 09:35:00] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 09:35:00] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 09:35:01] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 09:35:01] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 09:35:01] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 09:35:01] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 09:35:01] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 09:35:01] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 09:35:01] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 09:35:01] "GET /captchaimage/1352c78f2d82027e49b821f11913716412dec2fd/ HTTP/1.1" 200 4516
+[07/Feb/2021 09:35:02] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 09:35:02] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:35:02] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[07/Feb/2021 09:35:11] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 09:35:11] "GET /user HTTP/1.1" 200 13024
+[07/Feb/2021 09:35:11] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 09:35:11] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 09:35:11] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 09:35:11] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 09:35:11] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 09:35:11] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 09:35:12] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 09:35:13] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:35:13] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[07/Feb/2021 09:35:13] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 09:35:13] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 09:35:13] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[07/Feb/2021 09:35:13] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 09:35:13] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[07/Feb/2021 09:55:46] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:55:46] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:56:31] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:56:32] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:56:33] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:56:34] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[07/Feb/2021 09:56:34] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 09:58:20] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 09:58:20] "GET /static/app-assets/js/dark.js HTTP/1.1" 200 3832
+[07/Feb/2021 09:58:20] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 200 8710
+[07/Feb/2021 09:58:20] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 200 17591
+[07/Feb/2021 09:58:20] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 09:58:20] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 200 70142
+[07/Feb/2021 09:58:22] "GET /static/app-assets/js/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 09:58:23] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 09:58:23] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 09:58:24] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 09:58:24] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 09:58:24] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 09:58:24] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 09:58:25] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 09:58:25] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 09:58:25] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 09:58:25] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 09:58:25] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 09:58:25] "GET /captchaimage/5170fcde559f611d48a5ca3970832f2e7bb2eaf6/ HTTP/1.1" 200 4508
+[07/Feb/2021 09:58:26] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 09:58:26] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 09:58:26] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[07/Feb/2021 09:58:32] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 09:58:33] "GET /supervisor HTTP/1.1" 200 77163
+[07/Feb/2021 09:58:33] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 09:58:33] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 09:58:33] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 09:58:33] "GET /static/app-assets/img/logo.png HTTP/1.1" 200 1861
+[07/Feb/2021 09:58:33] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 09:58:33] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 09:58:33] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 09:58:33] "GET /static/ztreejs/jquery.ztree.core.js HTTP/1.1" 200 74711
+[07/Feb/2021 09:58:33] "GET /static/ztreejs/jquery.ztree.exhide.min.js HTTP/1.1" 200 5308
+[07/Feb/2021 09:58:33] "GET /static/ztreejs/fuzzysearch.js HTTP/1.1" 200 6122
+[07/Feb/2021 09:58:33] "GET /static/ztreejs/jquery.ztree.excheck.js HTTP/1.1" 200 25124
+[07/Feb/2021 09:58:33] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 09:58:35] "GET /supervisor/institute HTTP/1.1" 200 66316
+[07/Feb/2021 09:58:35] "GET /static/app-assets/vendors/js/toastr.min.js HTTP/1.1" 200 5243
+[07/Feb/2021 09:58:35] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 09:58:36] "GET /supervisor/people HTTP/1.1" 200 91738
+[07/Feb/2021 09:58:38] "GET /supervisor HTTP/1.1" 200 77163
+[07/Feb/2021 09:58:39] "GET /supervisor/institute HTTP/1.1" 200 66316
+[07/Feb/2021 09:58:41] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 09:58:41] "GET /static/ztreecss/zTreeStyle/img/zTreeStandard.png HTTP/1.1" 200 11173
+[07/Feb/2021 09:58:41] "GET /static/ztreecss/zTreeStyle/img/line_conn.gif HTTP/1.1" 200 45
+[07/Feb/2021 09:58:41] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[07/Feb/2021 09:58:41] "GET /supervisor/institute HTTP/1.1" 200 66316
+[07/Feb/2021 09:58:54] "GET /supervisordownload_organization/ HTTP/1.1" 200 9550
+[07/Feb/2021 10:00:27] "POST /supervisor/upload_organization HTTP/1.1" 200 39
+[07/Feb/2021 10:00:28] "GET /supervisor/institute HTTP/1.1" 200 67442
+[07/Feb/2021 10:00:29] "GET /supervisor/institute HTTP/1.1" 200 67442
+[07/Feb/2021 10:00:35] "GET /supervisor/people HTTP/1.1" 200 92344
+[07/Feb/2021 10:00:36] "GET /supervisor/institute HTTP/1.1" 200 67442
+[07/Feb/2021 10:00:37] "GET /supervisor/institute HTTP/1.1" 200 67442
+[07/Feb/2021 10:00:37] "GET /supervisor HTTP/1.1" 200 77844
+[07/Feb/2021 10:00:38] "GET /supervisor HTTP/1.1" 200 77844
+[07/Feb/2021 10:00:39] "GET /supervisor/evaluation_edit?csrfmiddlewaretoken=0psusfvQwVLmPOFlzP9susDUhgVL8jE5kNl2VET3CELbKDrqqlVYh4dBGTZRO9Sr&edit_id=18 HTTP/1.1" 200 1066
+[07/Feb/2021 10:05:37] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[07/Feb/2021 10:05:37] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 10:05:38] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 10:05:38] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 10:05:39] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 10:05:40] "GET /captchaimage/790e0f811bf12f5a2b838c86bbe4569ff31a0042/ HTTP/1.1" 200 4662
+[07/Feb/2021 10:05:49] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 10:05:49] "GET /user HTTP/1.1" 200 13034
+[07/Feb/2021 10:05:50] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36321
+[07/Feb/2021 10:05:50] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[07/Feb/2021 10:05:50] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[07/Feb/2021 10:05:50] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 10:05:51] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[07/Feb/2021 10:05:55] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+Not Found: /uploadExcel/
+[07/Feb/2021 10:06:44] "POST /uploadExcel/ HTTP/1.1" 404 5263
+[07/Feb/2021 10:06:53] "GET /user HTTP/1.1" 200 13034
+[07/Feb/2021 10:06:54] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[07/Feb/2021 10:06:55] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[07/Feb/2021 10:06:57] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 10:06:58] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 10:06:58] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 10:06:59] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 10:06:59] "GET /captchaimage/89fdceadb523ae4f459469c7be8962cf2d95ced2/ HTTP/1.1" 200 4652
+[07/Feb/2021 10:07:08] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 10:07:08] "GET /administrator HTTP/1.1" 200 13845
+[07/Feb/2021 10:07:10] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 10:07:10] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 10:07:10] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 10:07:12] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 10:07:12] "GET /captchaimage/642e0d2880ce6a79938b2e5a81ac4eeb44521331/ HTTP/1.1" 200 4886
+[07/Feb/2021 10:07:20] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 10:07:20] "GET /administrator HTTP/1.1" 200 13845
+[07/Feb/2021 10:07:22] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 10:07:22] "GET /static/ztreejs/jquery.ztree.all.min.js HTTP/1.1" 200 67966
+[07/Feb/2021 10:07:22] "GET /static/ztreejs/jquery.custom.js HTTP/1.1" 200 3788
+[07/Feb/2021 10:07:22] "GET /static/ztreejs/csrf.js HTTP/1.1" 200 1690
+[07/Feb/2021 10:07:22] "GET /static/src/js/standard.js HTTP/1.1" 200 42
+[07/Feb/2021 10:07:22] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 10:07:24] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 10:07:24] "GET /static/layui/css/modules/laydate/default/laydate.css HTTP/1.1" 200 7537
+[07/Feb/2021 10:07:26] "GET /static/js/echarts.min.js HTTP/1.1" 200 780697
+[07/Feb/2021 10:07:26] "GET /static/layui/lay/modules/upload.js HTTP/1.1" 200 7466
+[07/Feb/2021 10:07:26] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 10:07:26] "GET /static/layui/lay/modules/layer.js HTTP/1.1" 200 22071
+[07/Feb/2021 10:07:26] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1" 200 14425
+[07/Feb/2021 10:07:27] "GET /administrator/questionaire_manage?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 132191
+[07/Feb/2021 10:07:28] "GET /static/src/js/questionaire_management.js HTTP/1.1" 200 171
+[07/Feb/2021 10:07:28] "GET /administrator/questionaire_manage?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 132191
+[07/Feb/2021 10:39:30] "GET /administrator HTTP/1.1" 200 13845
+[07/Feb/2021 10:39:31] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:39:34] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 10:39:34] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 10:39:34] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 10:39:44] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 10:39:44] "GET /captchaimage/3525dd422f7ee90afc6e1ae49eaede1ee6cf4177/ HTTP/1.1" 200 4206
+[07/Feb/2021 10:39:56] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 10:39:56] "GET /supervisor HTTP/1.1" 200 77844
+[07/Feb/2021 10:41:14] "POST /supervisor/evaluation_create HTTP/1.1" 200 52
+[07/Feb/2021 10:41:14] "GET /supervisor HTTP/1.1" 200 92661
+[07/Feb/2021 10:41:17] "GET /supervisor HTTP/1.1" 200 92661
+[07/Feb/2021 10:41:17] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:41:20] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 10:41:20] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 10:41:22] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 10:41:23] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 10:41:23] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 10:41:23] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 10:41:23] "GET /captchaimage/c0257c190cc00e09a45647bd411eddc88bc15ff4/ HTTP/1.1" 200 4673
+[07/Feb/2021 10:41:29] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 10:41:29] "GET /administrator HTTP/1.1" 200 13971
+[07/Feb/2021 10:41:31] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43524
+[07/Feb/2021 10:41:31] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43554
+[07/Feb/2021 10:41:32] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43554
+[07/Feb/2021 10:41:33] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43554
+[07/Feb/2021 10:41:33] "GET /administrator/timeliner?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 52122
+[07/Feb/2021 10:41:34] "GET /administrator/timeliner?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 52122
+[07/Feb/2021 10:41:35] "GET /administrator/questionaire_manage?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 133523
+[07/Feb/2021 10:41:38] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43554
+[07/Feb/2021 10:41:38] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 43554
+[07/Feb/2021 10:41:39] "GET /administrator/indicator_export?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0 HTTP/1.1" 200 58
+[07/Feb/2021 10:41:56] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:41:56] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:44:08] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:44:08] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+Internal Server Error: /administrator/upload_indicator
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/administrator/views.py", line 805, in upload_indicator
+    return excel_import_indicator(obj, get_eval_name, get_admin_name)
+  File "/home/DESP/administrator/views.py", line 690, in excel_import_indicator
+    data = xlrd.open_workbook(file_excel)  # 打开excel
+  File "/usr/local/lib/python3.7/site-packages/xlrd-1.2.0-py3.7.egg/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/DELL/Desktop/DESP/DESP/uploads/indicator/20210207_10_46_20_evaluation_indicator.xlsx'
+[07/Feb/2021 10:46:20] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 500 74689
+Internal Server Error: /administrator/upload_indicator
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/administrator/views.py", line 805, in upload_indicator
+    return excel_import_indicator(obj, get_eval_name, get_admin_name)
+  File "/home/DESP/administrator/views.py", line 690, in excel_import_indicator
+    data = xlrd.open_workbook(file_excel)  # 打开excel
+  File "/usr/local/lib/python3.7/site-packages/xlrd-1.2.0-py3.7.egg/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/DELL/Desktop/DESP/DESP/uploads/indicator/20210207_10_46_23_evaluation_indicator.xlsx'
+[07/Feb/2021 10:46:23] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 500 74689
+[07/Feb/2021 10:46:26] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:46:26] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+Internal Server Error: /administrator/upload_indicator
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/administrator/views.py", line 798, in upload_indicator
+    obj.name = time.strftime("%Y%m%d_%H_%M_%S_", time.localtime(time.time())) + obj.name
+AttributeError: 'NoneType' object has no attribute 'name'
+[07/Feb/2021 10:47:44] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 500 59047
+/home/DESP/administrator/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 05, 2021 - 15:46:54
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>]
+5.0
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+yhb
+选择题
+yhb
+选择题
+yhb
+选择题
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+no question here
+no question here
+no question here
+no question here
+535
+qzc
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+535
+qzc
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+yhb
+选择题
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>]
+{'message': '上传成功'}
+[{"model": "supervisor.tableevaluation", "pk": 18, "fields": {"table_evaluation_col_name": "测试项目1", "table_evaluation_col_administrator": "qzc", "table_evaluation_col_status": "启用", "table_evaluation_col_create_time": "2021-02-04", "table_evaluation_col_finish_time": "2021-05-14", "table_evaluation_col_organization": "56,61,66,785,786,787,788,789,790,848,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,62,747,748,749,750,751,752,753,713,728,729,730,714,754,755,756,757,758,759,760,761,762,763,764,765,766,767,768,769,770,771,715,772,773,774,775,776,777,716,737,738,739,740,741,742,743,717,845,846,847,718,781,782,783,784,719,733,734,735,736,720,778,779,780,721,731,732,722,827,828,829,830,831,832,833,834,835,836,723,744,745,746,724,837,838,839,840,841,842,843,844,725,726,727,", "table_evaluation_col_deliver": "登录系统", "table_evaluation_col_mark": "计分"}}]
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>]
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>]
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+Watching for file changes with StatReloader
+[07/Feb/2021 10:52:15] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:52:15] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:52:15] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:52:16] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:52:16] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:52:16] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+Internal Server Error: /administrator/upload_indicator
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/administrator/views.py", line 805, in upload_indicator
+    return excel_import_indicator(obj, get_eval_name, get_admin_name)
+  File "/home/DESP/administrator/views.py", line 690, in excel_import_indicator
+    data = xlrd.open_workbook(file_excel)  # 打开excel
+  File "/usr/local/lib/python3.7/site-packages/xlrd-1.2.0-py3.7.egg/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/DESP/DESP/uploads/indicator/20210207_10_52_20_evaluation_indicator.xlsx'
+[07/Feb/2021 10:52:20] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 500 74563
+[07/Feb/2021 10:53:54] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 200 57
+[07/Feb/2021 10:53:54] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:53:55] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:53:55] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+/home/DESP/administrator/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 07, 2021 - 10:52:03
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+Watching for file changes with StatReloader
+[07/Feb/2021 10:59:22] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:59:23] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:59:23] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:59:23] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:59:23] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:59:23] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+Internal Server Error: /administrator/upload_indicator
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/xlrd-1.2.0-py3.7.egg/xlrd/book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: 'Sheet1' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/administrator/views.py", line 805, in upload_indicator
+    return excel_import_indicator(obj, get_eval_name, get_admin_name)
+  File "/home/DESP/administrator/views.py", line 691, in excel_import_indicator
+    table = data.sheet_by_name(by_name)  # 表单名称
+  File "/usr/local/lib/python3.7/site-packages/xlrd-1.2.0-py3.7.egg/xlrd/book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named <%r>' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named <'Sheet1'>
+[07/Feb/2021 10:59:32] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 500 77379
+[07/Feb/2021 10:59:54] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 200 57
+[07/Feb/2021 10:59:55] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 10:59:56] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 10:59:56] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43762
+[07/Feb/2021 11:00:12] "GET /administratordownload_indicator/ HTTP/1.1" 200 8810
+[07/Feb/2021 11:00:34] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 200 39
+[07/Feb/2021 11:00:34] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43789
+[07/Feb/2021 11:00:35] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 11:00:35] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43789
+[07/Feb/2021 11:00:36] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=539 HTTP/1.1" 200 43971
+[07/Feb/2021 11:00:37] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=539 HTTP/1.1" 200 43971
+[07/Feb/2021 11:00:37] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=540 HTTP/1.1" 200 43974
+[07/Feb/2021 11:00:37] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=540 HTTP/1.1" 200 43974
+[07/Feb/2021 11:00:38] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 43971
+[07/Feb/2021 11:00:38] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 43971
+[07/Feb/2021 11:02:47] "GET /administrator/indicator_export?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0 HTTP/1.1" 200 124
+[07/Feb/2021 11:02:56] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43789
+[07/Feb/2021 11:02:57] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 43789
+[07/Feb/2021 11:02:57] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=539 HTTP/1.1" 200 43971
+[07/Feb/2021 11:02:58] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=539 HTTP/1.1" 200 43971
+[07/Feb/2021 11:02:59] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=540 HTTP/1.1" 200 43974
+[07/Feb/2021 11:02:59] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=540 HTTP/1.1" 200 43974
+[07/Feb/2021 11:02:59] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 43971
+[07/Feb/2021 11:03:00] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 43971
+[07/Feb/2021 11:03:24] "GET /administratordownload_indicator/ HTTP/1.1" 200 8810
+[07/Feb/2021 11:08:04] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 200 39
+[07/Feb/2021 11:08:04] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 44773
+[07/Feb/2021 11:08:05] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 11:08:05] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 44773
+[07/Feb/2021 11:08:30] "GET /administrator/indicator_export?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0 HTTP/1.1" 200 609
+[07/Feb/2021 11:08:44] "GET /administratordownload_indicator/ HTTP/1.1" 200 8810
+[07/Feb/2021 11:16:19] "POST /administrator/upload_indicator?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&current_admin=qzc HTTP/1.1" 200 39
+[07/Feb/2021 11:16:19] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 46340
+[07/Feb/2021 11:16:20] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 11:16:20] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 46340
+[07/Feb/2021 11:16:40] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 46340
+[07/Feb/2021 11:16:40] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=541 HTTP/1.1" 200 46340
+[07/Feb/2021 11:17:00] "GET /administrator/questionaire_manage?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 133523
+[07/Feb/2021 11:17:03] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 11:17:03] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 11:17:05] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+[07/Feb/2021 11:17:06] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+[07/Feb/2021 11:17:07] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=545 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:07] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=545 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:07] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=546 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:08] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=546 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:08] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=547 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:08] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=547 HTTP/1.1" 200 46536
+[07/Feb/2021 11:17:09] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=548 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:09] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=548 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:09] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=549 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:09] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=549 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:10] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=550 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:10] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=550 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:10] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=551 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:10] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=551 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:11] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=556 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:11] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=556 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:11] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=558 HTTP/1.1" 200 46539
+[07/Feb/2021 11:17:12] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=558 HTTP/1.1" 200 46539
+[07/Feb/2021 11:17:12] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=559 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:12] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=559 HTTP/1.1" 200 46542
+[07/Feb/2021 11:17:21] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 11:17:21] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 11:17:21] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:38:09] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 14:38:09] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 14:38:09] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 14:41:35] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 14:41:35] "GET /captchaimage/aebd2debfe3c5d97b04b5c172572e1b44eb03dcc/ HTTP/1.1" 200 4234
+[07/Feb/2021 14:41:44] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 14:41:44] "GET /administrator HTTP/1.1" 200 13971
+[07/Feb/2021 14:41:45] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:41:46] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:41:47] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=545 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:47] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=545 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:48] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=560 HTTP/1.1" 200 46533
+[07/Feb/2021 14:41:49] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=560 HTTP/1.1" 200 46533
+[07/Feb/2021 14:41:49] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=559 HTTP/1.1" 200 46542
+[07/Feb/2021 14:41:50] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=559 HTTP/1.1" 200 46542
+[07/Feb/2021 14:41:50] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=560 HTTP/1.1" 200 46533
+[07/Feb/2021 14:41:50] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=560 HTTP/1.1" 200 46533
+[07/Feb/2021 14:41:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=561 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=561 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=562 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=562 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:52] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=563 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:52] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=563 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:53] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:41:53] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:41:54] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=546 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:54] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=546 HTTP/1.1" 200 46536
+[07/Feb/2021 14:41:55] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+[07/Feb/2021 14:41:55] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+[07/Feb/2021 14:41:56] "GET /administrator/questionaire?nodeID=542 HTTP/1.1" 200 69321
+[07/Feb/2021 14:41:56] "GET /static/app-assets/css/questionaire.css HTTP/1.1" 200 428
+[07/Feb/2021 14:50:33] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 14:50:33] "GET /static/app-assets/js/dark.js HTTP/1.1" 200 3832
+[07/Feb/2021 14:50:33] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 200 17591
+[07/Feb/2021 14:50:34] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 200 8710
+[07/Feb/2021 14:50:34] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:50:34] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 200 70142
+[07/Feb/2021 14:50:38] "GET /static/app-assets/js/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 14:50:38] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 14:50:38] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 14:50:50] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 14:50:50] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 14:50:50] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 14:50:50] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 14:50:50] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 14:50:50] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 14:50:50] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 14:50:50] "GET /captchaimage/3de512e59233a3fff4f0a9d711c84891320ab507/ HTTP/1.1" 200 4457
+[07/Feb/2021 14:50:50] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 14:50:50] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 14:51:01] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 14:51:01] "GET /supervisor HTTP/1.1" 200 92661
+[07/Feb/2021 14:51:02] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 14:51:02] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 14:51:02] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 14:51:02] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 14:51:02] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 14:51:02] "GET /static/ztreejs/jquery.ztree.core.js HTTP/1.1" 200 74711
+[07/Feb/2021 14:51:02] "GET /static/ztreejs/jquery.ztree.exhide.min.js HTTP/1.1" 200 5308
+[07/Feb/2021 14:51:02] "GET /static/ztreejs/fuzzysearch.js HTTP/1.1" 200 6122
+[07/Feb/2021 14:51:02] "GET /static/ztreejs/jquery.ztree.excheck.js HTTP/1.1" 200 25124
+[07/Feb/2021 14:51:02] "GET /static/app-assets/img/logo.png HTTP/1.1" 200 1861
+[07/Feb/2021 14:51:02] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 14:51:02] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 14:51:03] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 14:51:04] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[07/Feb/2021 14:51:11] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:51:11] "GET /static/app-assets/vendors/js/toastr.min.js HTTP/1.1" 200 5243
+[07/Feb/2021 14:51:11] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 14:51:11] "GET /static/ztreecss/zTreeStyle/img/line_conn.gif HTTP/1.1" 200 45
+[07/Feb/2021 14:51:11] "GET /static/ztreecss/zTreeStyle/img/zTreeStandard.png HTTP/1.1" 200 11173
+[07/Feb/2021 14:51:12] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:51:14] "GET /supervisor HTTP/1.1" 200 92661
+[07/Feb/2021 14:51:15] "GET /supervisor HTTP/1.1" 200 92661
+[07/Feb/2021 14:51:17] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:51:17] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:51:30] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:51:30] "GET /supervisor/institute HTTP/1.1" 200 68002
+[07/Feb/2021 14:52:05] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 14:52:05] "GET /static/app-assets/js/dark.js HTTP/1.1" 200 3832
+[07/Feb/2021 14:52:05] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 200 17591
+[07/Feb/2021 14:52:05] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 200 8710
+[07/Feb/2021 14:52:05] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:52:05] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 200 70142
+[07/Feb/2021 14:52:06] "GET /static/app-assets/js/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 14:52:07] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 14:52:07] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 14:52:08] "GET /supervisordownload_organization/ HTTP/1.1" 200 9550
+[07/Feb/2021 14:52:09] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 14:52:10] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 14:52:10] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 14:52:10] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 14:52:10] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 14:52:10] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 14:52:10] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 14:52:10] "GET /captchaimage/2773d5c2e60b82710da45cf77389d5c404462bc1/ HTTP/1.1" 200 4455
+[07/Feb/2021 14:52:10] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 14:52:11] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 14:52:11] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[07/Feb/2021 14:52:13] "GET /supervisor/people HTTP/1.1" 200 92344
+[07/Feb/2021 14:52:13] "GET /supervisor/people HTTP/1.1" 200 92344
+[07/Feb/2021 14:52:23] "GET /supervisor/user_export HTTP/1.1" 200 1368
+[07/Feb/2021 14:52:23] "POST /login HTTP/1.1" 200 8429
+[07/Feb/2021 14:52:23] "GET /captchaimage/edfcb124f8bc635a7ed7761795cc75fa18796595/ HTTP/1.1" 200 4750
+[07/Feb/2021 14:52:28] "POST /login HTTP/1.1" 200 8429
+[07/Feb/2021 14:52:28] "GET /captchaimage/ceb7f742bef27b193264edf02166c85580855879/ HTTP/1.1" 200 4972
+[07/Feb/2021 14:52:33] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 14:52:33] "GET /administrator HTTP/1.1" 200 13971
+[07/Feb/2021 14:52:33] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 14:52:33] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 14:52:33] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 14:52:33] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 14:52:33] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 14:52:33] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 14:52:34] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 14:52:36] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:52:36] "GET /static/app-assets/img/logo.png HTTP/1.1" 200 1861
+[07/Feb/2021 14:52:36] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/jquery.ztree.all.min.js HTTP/1.1" 200 67966
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/jquery.ztree.core.js HTTP/1.1" 200 74711
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/jquery.ztree.exhide.min.js HTTP/1.1" 200 5308
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/fuzzysearch.js HTTP/1.1" 200 6122
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/csrf.js HTTP/1.1" 200 1690
+[07/Feb/2021 14:52:36] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 14:52:36] "GET /static/ztreejs/jquery.custom.js HTTP/1.1" 200 3788
+[07/Feb/2021 14:52:36] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 14:52:36] "GET /static/src/js/standard.js HTTP/1.1" 200 42
+[07/Feb/2021 14:52:37] "GET /static/ztreecss/zTreeStyle/img/zTreeStandard.png HTTP/1.1" 200 11173
+[07/Feb/2021 14:52:37] "GET /static/ztreecss/zTreeStyle/img/line_conn.gif HTTP/1.1" 200 45
+[07/Feb/2021 14:52:37] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 54446)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[07/Feb/2021 14:52:52] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:52:53] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[07/Feb/2021 14:52:53] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[07/Feb/2021 14:52:53] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[07/Feb/2021 14:52:53] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[07/Feb/2021 14:52:53] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/jquery.ztree.all.min.js HTTP/1.1" 200 67966
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[07/Feb/2021 14:52:53] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[07/Feb/2021 14:52:53] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[07/Feb/2021 14:52:53] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[07/Feb/2021 14:52:53] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[07/Feb/2021 14:52:53] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/jquery.ztree.core.js HTTP/1.1" 200 74711
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/jquery.ztree.exhide.min.js HTTP/1.1" 200 5308
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/fuzzysearch.js HTTP/1.1" 200 6122
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/csrf.js HTTP/1.1" 200 1690
+[07/Feb/2021 14:52:53] "GET /static/ztreejs/jquery.custom.js HTTP/1.1" 200 3788
+[07/Feb/2021 14:52:53] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[07/Feb/2021 14:52:53] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 14:52:53] "GET /static/src/js/standard.js HTTP/1.1" 200 42
+[07/Feb/2021 14:52:53] "GET /static/app-assets/img/logo.png HTTP/1.1" 200 1861
+[07/Feb/2021 14:52:53] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[07/Feb/2021 14:52:54] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[07/Feb/2021 14:52:54] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[07/Feb/2021 14:52:54] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[07/Feb/2021 14:52:55] "GET /static/ztreecss/zTreeStyle/img/line_conn.gif HTTP/1.1" 200 45
+[07/Feb/2021 14:52:55] "GET /static/ztreecss/zTreeStyle/img/zTreeStandard.png HTTP/1.1" 200 11173
+[07/Feb/2021 14:52:55] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[07/Feb/2021 14:52:57] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[07/Feb/2021 14:53:02] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[07/Feb/2021 14:53:11] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 14:53:11] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 14:53:11] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:53:11] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:53:12] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 14:53:13] "GET /captchaimage/4e14f219c12b994f3bce24d1199946ec3eed3d61/ HTTP/1.1" 200 4975
+[07/Feb/2021 14:53:26] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 14:53:26] "GET /administrator HTTP/1.1" 200 13971
+[07/Feb/2021 14:53:32] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:53:33] "GET /static/ztreejs/jquery.ztree.all.min.js HTTP/1.1" 200 67966
+[07/Feb/2021 14:53:33] "GET /static/ztreejs/jquery.custom.js HTTP/1.1" 200 3788
+[07/Feb/2021 14:53:33] "GET /static/ztreejs/csrf.js HTTP/1.1" 200 1690
+[07/Feb/2021 14:53:33] "GET /static/src/js/standard.js HTTP/1.1" 200 42
+[07/Feb/2021 14:53:33] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[07/Feb/2021 14:53:33] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:53:40] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:53:40] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:53:42] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:53:42] "GET /static/layui/css/modules/laydate/default/laydate.css HTTP/1.1" 200 7537
+[07/Feb/2021 14:53:42] "GET /static/js/echarts.min.js HTTP/1.1" 200 780697
+[07/Feb/2021 14:53:42] "GET /static/layui/lay/modules/upload.js HTTP/1.1" 200 7466
+[07/Feb/2021 14:53:42] "GET /static/layui/lay/modules/layer.js HTTP/1.1" 200 22071
+[07/Feb/2021 14:53:42] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:53:42] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1" 200 14425
+[07/Feb/2021 14:54:12] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:54:12] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:54:16] "GET /administrator/questionaire_manage?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 132191
+[07/Feb/2021 14:54:16] "GET /static/src/js/questionaire_management.js HTTP/1.1" 200 171
+[07/Feb/2021 14:54:17] "GET /administrator/questionaire_manage?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 132191
+[07/Feb/2021 14:54:39] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:54:39] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:54:46] "GET /administrator/edit?csrfmiddlewaretoken=qvUf0yeZ96fLolZ7dKG44sEgR2raCkLwr4XiBjOzi1i7majH55B6j3NlyI5EsDg8&edit_id=0 HTTP/1.1" 200 14
+[07/Feb/2021 14:54:52] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=532 HTTP/1.1" 200 43720
+[07/Feb/2021 14:54:52] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=532 HTTP/1.1" 200 43720
+[07/Feb/2021 14:54:53] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=533 HTTP/1.1" 200 43711
+[07/Feb/2021 14:54:53] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=533 HTTP/1.1" 200 43711
+[07/Feb/2021 14:54:55] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=533 HTTP/1.1" 200 43711
+[07/Feb/2021 14:54:55] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=533 HTTP/1.1" 200 43711
+[07/Feb/2021 14:54:57] "GET /administrator/edit?csrfmiddlewaretoken=calum7ELPec6HJadTNPEtPaNg1ELXFUFuRgHh6Eggg2Y0aOYdPPY7Vg8jP2M3Mz0&edit_id=533 HTTP/1.1" 200 1355
+[07/Feb/2021 14:55:06] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:06] "GET /static/app-assets/js/horizontal-timeline.js HTTP/1.1" 200 12494
+[07/Feb/2021 14:55:06] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:11] "GET /static/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 701
+[07/Feb/2021 14:55:11] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 11493
+[07/Feb/2021 14:55:25] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:25] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:30] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:30] "GET /administrator/calculate?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26611
+[07/Feb/2021 14:55:33] "GET /administrator/review?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26625
+[07/Feb/2021 14:55:33] "GET /administrator/review?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 26625
+[07/Feb/2021 14:55:37] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:55:37] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:55:44] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:55:45] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[07/Feb/2021 14:55:49] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:55:49] "GET /administrator/timeliner?timeevalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc HTTP/1.1" 200 52050
+[07/Feb/2021 14:59:49] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[07/Feb/2021 14:59:50] "GET /logout HTTP/1.1" 302 0
+[07/Feb/2021 14:59:50] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 14:59:50] "GET /static/app-assets/js/dark.js HTTP/1.1" 200 3832
+[07/Feb/2021 14:59:50] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 14:59:50] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 200 8710
+[07/Feb/2021 14:59:50] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 200 17591
+[07/Feb/2021 14:59:50] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 200 70142
+[07/Feb/2021 14:59:53] "GET /static/app-assets/js/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 14:59:54] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 14:59:54] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 16:23:22] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 16:23:22] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[07/Feb/2021 16:23:22] "GET /favicon.ico HTTP/1.1" 404 5259
+[07/Feb/2021 16:23:26] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 16:23:26] "GET /captchaimage/8950fa14cd8fc31a75cd3c8cf84282d08596b968/ HTTP/1.1" 200 4643
+[07/Feb/2021 16:23:38] "POST /login HTTP/1.1" 302 0
+[07/Feb/2021 16:23:38] "GET /user HTTP/1.1" 200 13060
+[07/Feb/2021 16:23:46] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36321
+[07/Feb/2021 16:23:46] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[07/Feb/2021 16:23:46] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[07/Feb/2021 16:24:00] "GET /manager/visualization?app=user HTTP/1.1" 200 19494
+[07/Feb/2021 16:24:00] "GET /static/lib/echarts/china.js HTTP/1.1" 200 60565
+[07/Feb/2021 16:24:00] "GET /static/src/js/overview_research.js HTTP/1.1" 200 29322
+[07/Feb/2021 16:24:00] "GET /static/src/js/overview_research2.js HTTP/1.1" 200 21151
+[07/Feb/2021 16:24:00] "GET /static/src/js/overview_research3.js HTTP/1.1" 200 21196
+[07/Feb/2021 16:24:00] "GET /static/src/js/overview_research4.js HTTP/1.1" 200 21352
+[07/Feb/2021 16:24:00] "GET /static/src/js/jquery.ba-resize.js.js HTTP/1.1" 404 1710
+[07/Feb/2021 16:24:00] "GET /static/lib/echarts/jquery.js HTTP/1.1" 200 242142
+[07/Feb/2021 16:24:03] "GET /static/lib/echarts/echarts.js HTTP/1.1" 200 2893126
+[07/Feb/2021 16:24:03] "GET /static/src/js/jquery.ba-resize.js.js HTTP/1.1" 404 1710
+[07/Feb/2021 16:24:03] "GET /static/DATA/overview_yjs.json HTTP/1.1" 200 4780
+[07/Feb/2021 16:24:04] "GET /manager/visualization?app=user HTTP/1.1" 200 19494
+[07/Feb/2021 16:24:33] "GET /user HTTP/1.1" 200 13060
+[07/Feb/2021 16:24:36] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36321
+[07/Feb/2021 20:00:36] "GET / HTTP/1.1" 200 7815
+[07/Feb/2021 20:00:36] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[07/Feb/2021 20:00:38] "GET /login HTTP/1.1" 200 8270
+[07/Feb/2021 20:00:38] "GET /captchaimage/f6dc853f329a9e823ec1419bd93df411c725f1cb/ HTTP/1.1" 200 4987
+[08/Feb/2021 09:36:00] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 09:36:00] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 09:36:00] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[08/Feb/2021 09:36:00] "GET /favicon.ico HTTP/1.1" 404 5259
+[08/Feb/2021 09:36:01] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 09:36:01] "GET /captchaimage/c9a6189dffa2c9ecc8c26521b5b2697a000d98d6/ HTTP/1.1" 200 4281
+[08/Feb/2021 09:36:08] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 09:36:08] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 09:36:11] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36148
+[08/Feb/2021 09:36:11] "GET /static/src/js/questionaire_result.js HTTP/1.1" 304 0
+[08/Feb/2021 09:36:16] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[08/Feb/2021 09:36:18] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:36:20] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:36:22] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[08/Feb/2021 09:39:20] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:39:21] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36331
+[08/Feb/2021 09:40:36] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 09:40:36] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 09:40:36] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 09:40:37] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 09:40:37] "GET /captchaimage/3d3cfd6236d071c6fb065d6e94eb356450634414/ HTTP/1.1" 200 4167
+[08/Feb/2021 09:40:42] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 09:40:42] "GET /administrator HTTP/1.1" 200 13971
+[08/Feb/2021 09:40:45] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[08/Feb/2021 09:40:45] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=0 HTTP/1.1" 200 43704
+[08/Feb/2021 09:40:47] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[08/Feb/2021 09:40:47] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 43988
+[08/Feb/2021 09:40:49] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69558
+[08/Feb/2021 09:41:19] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 09:41:19] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 09:41:21] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69858
+[08/Feb/2021 09:41:22] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69858
+[08/Feb/2021 09:41:23] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:41:23] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 09:41:24] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 09:41:26] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 09:41:26] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 09:41:27] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69869
+[08/Feb/2021 09:41:28] "GET /administrator/questionaire?nodeID=535 HTTP/1.1" 200 69869
+[08/Feb/2021 09:41:29] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:41:31] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 44137
+[08/Feb/2021 09:41:31] "GET /administrator/standard?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&admin=qzc&id=535 HTTP/1.1" 200 44137
+[08/Feb/2021 09:41:34] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 09:41:34] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 09:41:34] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 09:41:35] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 09:41:35] "GET /captchaimage/dbffd5d22c8a4f9843c0bbd857a4f51581b08289/ HTTP/1.1" 200 4710
+[08/Feb/2021 09:41:39] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 09:41:39] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 09:41:41] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36583
+[08/Feb/2021 09:41:46] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:41:46] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 09:41:49] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:41:49] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:41:51] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:41:51] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 09:41:51] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 09:41:51] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 09:41:51] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 09:41:51] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 09:41:51] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 09:41:51] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 09:41:51] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 09:41:51] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 09:41:51] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 09:41:51] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 09:41:51] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 09:41:51] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 09:41:51] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 09:41:52] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 09:41:52] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 09:41:53] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 09:41:53] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:41:56] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:41:56] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:41:59] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:00] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:42:00] "POST /login HTTP/1.1" 200 8429
+[08/Feb/2021 09:42:03] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:42:05] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:05] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:42:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:06] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:42:06] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[08/Feb/2021 09:42:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:07] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:42:08] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:11] "GET /captchaimage/0b107467543968306ba0f7265c727ecdb2fad3cd/ HTTP/1.1" 200 4662
+[08/Feb/2021 09:42:18] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 09:42:19] "POST /login HTTP/1.1" 200 8429
+[08/Feb/2021 09:42:26] "GET /captchaimage/048bd69158abdae9f6d33d5fe83de42c49ecc6ff/ HTTP/1.1" 200 4427
+[08/Feb/2021 09:42:38] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 09:42:42] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 09:42:44] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:42:46] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 09:42:49] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 09:42:50] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 09:42:51] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 09:42:52] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:42:53] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:43:13] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 09:43:13] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 09:43:19] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[08/Feb/2021 09:43:21] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:43:21] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 09:43:21] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 09:43:21] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 09:43:21] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 09:43:21] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 09:43:21] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 09:43:21] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 09:43:21] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 09:43:22] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 09:43:22] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 09:43:22] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 09:43:22] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 09:43:22] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 09:43:22] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 09:43:22] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 09:43:22] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 09:43:22] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 09:43:22] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 09:43:22] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 09:43:23] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 09:43:23] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 09:43:23] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 09:43:23] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 09:43:58] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:43:58] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 09:43:58] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 09:43:58] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 09:43:58] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 09:43:58] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 09:43:58] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 09:43:59] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 09:43:59] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 09:43:59] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 09:43:59] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 09:43:59] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 09:43:59] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 09:43:59] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 09:43:59] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 09:43:59] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 09:43:59] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 09:43:59] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 09:43:59] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 09:44:00] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 09:44:03] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:44:03] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:44:07] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:44:08] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:33] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 09:44:35] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:36] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:37] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:39] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:44:40] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:45:55] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:45:55] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 09:45:57] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:45:58] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 09:46:01] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:46:01] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:46:03] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:46:03] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 09:46:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 09:46:06] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 09:46:07] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 09:46:07] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:20:17] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 10:20:17] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:20:17] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:20:17] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:20:17] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:20:17] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:20:17] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:20:17] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:20:17] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:20:17] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:20:17] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:20:17] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:20:17] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:20:17] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:20:17] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:20:18] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:20:18] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:20:18] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:20:18] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 10:20:18] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[08/Feb/2021 10:20:25] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 10:20:25] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 10:20:27] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 10:20:27] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:20:27] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:20:27] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:20:27] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:20:27] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:20:27] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:20:27] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:20:27] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:20:27] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:20:28] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:20:28] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:20:28] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:20:28] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:20:28] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:20:28] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:20:28] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 10:20:28] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:20:28] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:20:28] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:20:28] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:20:28] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:20:28] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:20:28] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:20:29] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:20:29] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:20:29] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:20:29] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:20:29] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:20:29] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:20:29] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:20:29] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:20:29] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:20:30] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:20:30] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 10:20:31] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:20:33] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 10:20:36] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 4279)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 10:21:30] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+Not Found: /uploadExcel/
+[08/Feb/2021 10:21:46] "POST /uploadExcel/ HTTP/1.1" 404 5263
+Not Found: /favicon.ico
+[08/Feb/2021 10:21:46] "GET /favicon.ico HTTP/1.1" 404 5259
+Not Found: /uploadExcel/
+[08/Feb/2021 10:22:27] "POST /uploadExcel/ HTTP/1.1" 404 5263
+Not Found: /uploadExcel/
+[08/Feb/2021 10:22:30] "POST /uploadExcel/ HTTP/1.1" 404 5263
+Not Found: /favicon.ico
+[08/Feb/2021 10:22:30] "GET /favicon.ico HTTP/1.1" 404 5259
+Not Found: /uploadExcel/
+[08/Feb/2021 10:22:35] "POST /uploadExcel/ HTTP/1.1" 404 5263
+[08/Feb/2021 10:22:47] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:22:47] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:22:47] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:22:47] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:22:47] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:22:47] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:22:47] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:22:47] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:22:47] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:22:47] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:22:47] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:22:47] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:22:47] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:22:47] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:22:47] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:22:48] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:22:48] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:22:48] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:22:48] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+Not Found: /uploadExcel/
+[08/Feb/2021 10:22:54] "POST /uploadExcel/ HTTP/1.1" 404 5263
+Not Found: /favicon.ico
+[08/Feb/2021 10:22:54] "GET /favicon.ico HTTP/1.1" 404 5259
+[08/Feb/2021 10:29:41] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 10:29:41] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:29:41] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:29:41] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:29:41] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:29:41] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:29:41] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:29:41] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:29:41] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:29:41] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:29:41] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:29:41] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:29:41] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:29:41] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:29:41] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:29:41] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:29:42] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:29:42] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:29:42] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 10:29:42] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:29:42] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:29:42] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:29:42] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:29:42] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:29:42] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:29:42] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:29:43] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:29:43] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:29:43] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:29:43] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:29:43] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:29:43] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:29:43] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:29:43] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:29:43] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:29:43] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:29:43] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:29:43] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 10:29:43] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:29:43] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:29:44] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:29:44] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:29:44] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 10:29:45] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:29:45] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+Not Found: /uploadExcel/
+[08/Feb/2021 10:29:55] "POST /uploadExcel/ HTTP/1.1" 404 5263
+Not Found: /favicon.ico
+[08/Feb/2021 10:29:55] "GET /favicon.ico HTTP/1.1" 404 5259
+[08/Feb/2021 10:31:00] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+/home/DESP/DESP/urls.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 07, 2021 - 10:59:21
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+30
+0
+50
+30.00
+20
+80.00
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+30
+0
+40
+30.00
+30
+70.00
+40
+0
+40
+40.00
+20
+80.00
+40
+0
+20
+40.00
+20
+60.00
+20
+80.00
+no question here
+no question here
+40
+0
+30
+40.00
+15
+70.00
+15
+85.00
+30
+0
+30
+30.00
+20
+60.00
+20
+80.00
+60
+0
+40
+60.00
+70
+0
+30
+70.00
+60
+0
+40
+60.00
+50
+0
+50
+50.00
+20
+0
+30
+20.00
+20
+50.00
+30
+70.00
+70
+0
+30
+70.00
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+542
+qzc
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+no question here
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+yhb
+选择题
+no question here
+no question here
+535
+qzc
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+<QueryDict: {'questiontype': ['矩阵题'], 'questionnumber': ['2'], 'indicatorID': ['535'], 'choicetitle': ['矩阵题复选测试'], 'class': ['多选'], 'markmethod': ['手动打分'], 'points': [''], 'row': ['1\r\n2\r\n3'], 'choice': ['1', '2', '3', '4']}>
+535
+qzc
+535
+qzc
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+<QueryDict: {'questiontype': ['选择题'], 'questionnumber': ['1'], 'indicatorID': ['535'], 'choicetitle': ['1+7='], 'class': ['单选'], 'required': ['on'], 'markmethod': ['手动打分'], 'points': ['1'], 'choice': ['0', '8']}>
+<QueryDict: {'questiontype': ['矩阵题'], 'questionnumber': ['2'], 'indicatorID': ['535'], 'choicetitle': ['矩阵题复选测试           '], 'class': ['单选'], 'markmethod': ['手动打分'], 'points': [''], 'row': ['1\r\n2\r\n3\r\n'], 'choice': ['1', '2', '3', '4']}>
+535
+qzc
+535
+qzc
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+yhb
+矩阵题
+{'table_question_result_col_answer': '8', 'table_question_result_col_marks': 0, 'table_question_result_col_blank': '3lqP5fNghKELjJ1it8sH', 'table_question_result_col_user_id': 88, 'table_question_result_col_questionaire_id': 0, 'table_question_result_col_question_id': '290'}
+yhb
+选择题
+yhb
+矩阵题
+yhb
+矩阵题
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+841 华南植物园
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (19)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+Watching for file changes with StatReloader
+[08/Feb/2021 10:34:48] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:34:48] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:34:48] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:34:48] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:34:48] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:34:48] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:34:48] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:34:48] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:34:48] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:34:48] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 10:34:48] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:34:48] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:34:48] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:34:48] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:34:48] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:34:48] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:34:49] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:34:49] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:34:49] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:34:49] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:34:49] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+Internal Server Error: /uploadExcel/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 186, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 309, in check_response
+    "instead." % name
+ValueError: The view login.views.upload_xlsx didn't return an HttpResponse object. It returned None instead.
+[08/Feb/2021 10:34:54] "POST /uploadExcel/ HTTP/1.1" 500 58257
+Not Found: /favicon.ico
+[08/Feb/2021 10:34:54] "GET /favicon.ico HTTP/1.1" 404 5390
+[08/Feb/2021 10:35:34] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+Internal Server Error: /uploadExcel/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 186, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 309, in check_response
+    "instead." % name
+ValueError: The view login.views.upload_xlsx didn't return an HttpResponse object. It returned None instead.
+[08/Feb/2021 10:35:39] "POST /uploadExcel/ HTTP/1.1" 500 58257
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 10:34:39
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+name 'transaction' is not defined
+name 'transaction' is not defined
+Watching for file changes with StatReloader
+[08/Feb/2021 10:37:47] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:37:49] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:37:49] "GET /static/app-assets/fonts/feather/style.min.css HTTP/1.1" 200 9225
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/css/prism.min.css HTTP/1.1" 200 2348
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/css/perfect-scrollbar.min.css HTTP/1.1" 200 3280
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/css/tables/datatable/datatables.min.css HTTP/1.1" 200 22840
+[08/Feb/2021 10:37:49] "GET /static/app-assets/css/questionaire_result.css HTTP/1.1" 200 184
+[08/Feb/2021 10:37:49] "GET /static/layui/css/layui.css HTTP/1.1" 200 74303
+[08/Feb/2021 10:37:49] "GET /static/layui/layui.js HTTP/1.1" 200 7395
+[08/Feb/2021 10:37:49] "GET /static/app-assets/fonts/simple-line-icons/style.css HTTP/1.1" 200 90167
+[08/Feb/2021 10:37:49] "GET /static/app-assets/img/portrait/small/avatar-s-3.jpg HTTP/1.1" 200 51193
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/core/popper.min.js HTTP/1.1" 200 19197
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/core/bootstrap.min.js HTTP/1.1" 200 70917
+[08/Feb/2021 10:37:49] "GET /static/app-assets/fonts/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 161541
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/perfect-scrollbar.jquery.min.js HTTP/1.1" 200 25808
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/prism.min.js HTTP/1.1" 200 16318
+[08/Feb/2021 10:37:49] "GET /static/layui/font/iconfont.woff2?v=256 HTTP/1.1" 200 25964
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/core/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/jquery.matchHeight-min.js HTTP/1.1" 200 3358
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/screenfull.min.js HTTP/1.1" 200 1722
+[08/Feb/2021 10:37:49] "GET /static/app-assets/vendors/js/pace/pace.min.js HTTP/1.1" 200 12507
+[08/Feb/2021 10:37:49] "GET /static/app-assets/js/app-sidebar.js HTTP/1.1" 200 8851
+[08/Feb/2021 10:37:49] "GET /static/app-assets/js/notification-sidebar.js HTTP/1.1" 200 942
+[08/Feb/2021 10:37:49] "GET /static/src/js/questionaire_result.js HTTP/1.1" 200 8431
+[08/Feb/2021 10:37:49] "GET /static/src/js/jquery.cookie.js HTTP/1.1" 200 3697
+[08/Feb/2021 10:37:49] "GET /static/app-assets/js/data-tables/datatable-styling.js HTTP/1.1" 200 1212
+[08/Feb/2021 10:37:49] "GET /static/src/js/questionaire.js HTTP/1.1" 200 97438
+[08/Feb/2021 10:37:50] "GET /static/app-assets/css/app.css HTTP/1.1" 200 1354716
+[08/Feb/2021 10:37:50] "GET /static/app-assets/vendors/js/datatable/datatables.min.js HTTP/1.1" 200 2333192
+[08/Feb/2021 10:37:50] "GET /static/layui/lay/modules/element.js HTTP/1.1" 200 7264
+[08/Feb/2021 10:37:50] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:37:50] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 10:37:57] "POST /uploadExcel/ HTTP/1.1" 200 5
+Not Found: /favicon.ico
+[08/Feb/2021 10:37:57] "GET /favicon.ico HTTP/1.1" 404 5390
+[08/Feb/2021 10:38:00] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:38:04] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 10:38:09] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 6430)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 10:38:20] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 10:38:23] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 10:37:44
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+name 'transaction' is not defined
+name 'transaction' is not defined
+Watching for file changes with StatReloader
+[08/Feb/2021 10:39:50] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 10:39:50] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:39:50] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 10:39:56] "POST /uploadExcel/ HTTP/1.1" 200 15
+[08/Feb/2021 10:39:58] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 10:40:52] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 10:41:25] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 11:32:07] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:11] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:11] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:16] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:16] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:19] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:19] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:22] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 11:32:23] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:23] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 11:32:24] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:26] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:26] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 11:32:41] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 11:32:41] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 11:32:42] "GET /static/app-assets/js/echarts.js.map HTTP/1.1" 404 1707
+[08/Feb/2021 11:32:43] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 11:32:43] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 11:32:44] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:45] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36148
+[08/Feb/2021 11:32:45] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:47] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 11:32:48] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 11:32:48] "GET /static/app-assets/vendors/js/datatable/pdfmake.min.js.map HTTP/1.1" 404 1773
+[08/Feb/2021 12:15:05] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 12:15:06] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:15:07] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 12:15:07] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 12:15:09] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 12:15:10] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 12:15:12] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 12:15:14] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 12:15:16] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 12:15:16] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 12:15:18] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 12:15:24] "POST /uploadExcel/ HTTP/1.1" 200 5
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 10:39:48
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+list index out of range
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+yhb
+选择题
+yhb
+矩阵题
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+yhb
+矩阵题
+list index out of range
+Watching for file changes with StatReloader
+[08/Feb/2021 12:47:27] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 12:47:27] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:47:27] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[08/Feb/2021 12:47:27] "GET /favicon.ico HTTP/1.1" 404 5390
+[08/Feb/2021 12:47:28] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 12:47:28] "GET /user HTTP/1.1" 200 13007
+[08/Feb/2021 12:47:31] "GET /user HTTP/1.1" 200 13007
+[08/Feb/2021 12:47:31] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 12:47:32] "GET /user HTTP/1.1" 200 13007
+[08/Feb/2021 12:47:32] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 12:47:33] "GET /user HTTP/1.1" 200 13007
+[08/Feb/2021 12:47:33] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 12:47:36] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 12:47:36] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 12:47:36] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:47:36] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:47:37] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 12:47:37] "GET /captchaimage/542457bc9d75b60effdc1b4869cd01be8104fcd8/ HTTP/1.1" 200 4697
+[08/Feb/2021 12:47:42] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 12:47:42] "GET /administrator HTTP/1.1" 200 13971
+[08/Feb/2021 12:47:47] "GET /login HTTP/1.1" 302 0
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:47:21
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Feb/2021 12:48:06] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 12:48:06] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 12:48:07] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:48:08] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 12:48:08] "GET /captchaimage/310b4710216fe2c05771d7a5e311f3a214d8aaeb/ HTTP/1.1" 200 4764
+[08/Feb/2021 12:48:12] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 12:48:12] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 12:48:13] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 12:48:16] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 12:48:17] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:48:05
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+Watching for file changes with StatReloader
+/home/DESP/supervisor/models.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:50:23
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Feb/2021 12:50:42] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 12:50:42] "GET /static/app-assets/js/echarts.js HTTP/1.1" 304 0
+[08/Feb/2021 12:50:42] "GET /static/app-assets/js/dark.js HTTP/1.1" 304 0
+[08/Feb/2021 12:50:42] "GET /static/app-assets/js/abs_sunburst.js HTTP/1.1" 304 0
+[08/Feb/2021 12:50:42] "GET /static/app-assets/js/over_yjs_bar.js HTTP/1.1" 304 0
+[08/Feb/2021 12:50:42] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 12:50:42] "GET /static/app-assets/img/OldPlatform/logo2.png HTTP/1.1" 304 0
+[08/Feb/2021 12:50:43] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+Not Found: /favicon.ico
+[08/Feb/2021 12:50:43] "GET /favicon.ico HTTP/1.1" 404 5390
+[08/Feb/2021 12:50:44] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 12:50:44] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 12:50:44] "GET /static/ztreecss/zTreeStyle/zTreeStyle.css HTTP/1.1" 200 6223
+[08/Feb/2021 12:50:44] "GET /static/app-assets/fonts/feather/fonts/feather.ttf?9xfrq8 HTTP/1.1" 200 58264
+[08/Feb/2021 12:50:46] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 12:50:47] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+Internal Server Error: /download_form/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/login/views.py", line 464, in download_form
+    user_info = TableUser.objects.get(table_user_col_name=user_name)
+NameError: name 'TableUser' is not defined
+[08/Feb/2021 12:50:48] "GET /download_form/?form=288 HTTP/1.1" 500 57362
+/home/DESP/login/views.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:50:34
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+56 中国科学院
+TableEvaluation object (18)
+TableEvaluation object (19)
+TableEvaluation object (20)
+[<QuerySet [<TableEvaluation: TableEvaluation object (18)>]>, <QuerySet [<TableEvaluation: TableEvaluation object (20)>]>]
+Watching for file changes with StatReloader
+[08/Feb/2021 12:52:02] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 12:52:08] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 12:52:10] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 8335)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 12:52:40] "POST /uploadExcel/ HTTP/1.1" 200 5
+/home/DESP/DESP/settings.py changed, reloading.
+['/home/DESP/DESP/config/config_docker.txt']
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:51:59
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+56
+56
+56
+name 'TableQuestionResult' is not defined
+Watching for file changes with StatReloader
+Internal Server Error: /user/questions
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/user/views.py", line 33, in user
+    user_name = request.session['user_name']
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'user_name'
+[08/Feb/2021 12:54:14] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 500 61326
+Not Found: /favicon.ico
+[08/Feb/2021 12:54:14] "GET /favicon.ico HTTP/1.1" 404 5390
+Internal Server Error: /user/questions
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/user/views.py", line 33, in user
+    user_name = request.session['user_name']
+  File "/usr/local/lib/python3.7/site-packages/django/contrib/sessions/backends/base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'user_name'
+[08/Feb/2021 12:54:17] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 500 60832
+[08/Feb/2021 12:54:19] "GET /user HTTP/1.1" 302 0
+[08/Feb/2021 12:54:20] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 12:54:20] "GET /captchaimage/6d3a7c721bc23c8d1c81c467e37078ddc9c8ccdf/ HTTP/1.1" 200 4856
+[08/Feb/2021 12:54:29] "POST /login HTTP/1.1" 302 0
+Internal Server Error: /user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/login/views.py", line 286, in user
+    if int(each1) == orgid:
+ValueError: invalid literal for int() with base 10: '科学创新发展中心_北京分院'
+[08/Feb/2021 12:54:29] "GET /user HTTP/1.1" 500 59941
+[08/Feb/2021 12:54:45] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 12:54:57] "GET /login HTTP/1.1" 302 0
+Internal Server Error: /user
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/login/views.py", line 286, in user
+    if int(each1) == orgid:
+ValueError: invalid literal for int() with base 10: '科学创新发展中心_北京分院'
+[08/Feb/2021 12:54:57] "GET /user HTTP/1.1" 500 59799
+/home/DESP/DESP/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 08, 2021 - 12:54:11
+Django version 3.1.4, using settings 'DESP.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+56 中国科学院
+TableEvaluation object (4)
+TableEvaluation object (5)
+TableEvaluation object (8)
+TableEvaluation object (9)
+TableEvaluation object (14)
+TableEvaluation object (15)
+TableEvaluation object (16)
+TableEvaluation object (17)
+56 中国科学院
+TableEvaluation object (4)
+TableEvaluation object (5)
+TableEvaluation object (8)
+TableEvaluation object (9)
+TableEvaluation object (14)
+TableEvaluation object (15)
+TableEvaluation object (16)
+TableEvaluation object (17)
+Watching for file changes with StatReloader
+[08/Feb/2021 13:04:55] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 13:04:55] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 13:04:56] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 13:04:56] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 13:05:01] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36148
+[08/Feb/2021 13:05:03] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 13:05:05] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:05:08] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 13:05:15] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:10:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 13:10:06] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:10:07] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 13:10:12] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 10442)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 13:10:32] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36574
+[08/Feb/2021 13:10:34] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 13:10:34] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 13:34:11] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 13:34:11] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 13:34:12] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:34:13] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 13:34:14] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:34:15] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:34:15] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 13:34:17] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:34:17] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 13:37:41] "POST /uploadExcel/ HTTP/1.1" 200 15
+[08/Feb/2021 13:38:30] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:40:18] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:47:20] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 13:47:20] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 13:47:22] "GET /login HTTP/1.1" 302 0
+[08/Feb/2021 13:47:22] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 13:47:24] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36148
+[08/Feb/2021 13:47:26] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 13:47:28] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[08/Feb/2021 13:47:33] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 13:47:34] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 13:47:38] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 13:47:38] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 13:47:40] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:47:42] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 13:47:43] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 13:47:51] "GET /download_form/?form=288 HTTP/1.1" 200 11264
+[08/Feb/2021 13:48:29] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:51:35] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:52:09] "POST /uploadExcel/ HTTP/1.1" 200 5
+[08/Feb/2021 13:53:30] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 13:53:31] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 13:53:31] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:12:00] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:12:01] "GET /captchaimage/d2169409463cd815fb6c4725f9f1c8526d39f307/ HTTP/1.1" 200 4737
+[08/Feb/2021 14:12:18] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:12:18] "GET /static/ztreejs/jquery.ztree.excheck.js HTTP/1.1" 200 25124
+[08/Feb/2021 14:12:18] "GET /supervisor HTTP/1.1" 200 92661
+[08/Feb/2021 14:20:41] "GET /supervisor/institute HTTP/1.1" 200 68002
+[08/Feb/2021 14:20:41] "GET /static/app-assets/vendors/js/toastr.min.js HTTP/1.1" 200 5243
+[08/Feb/2021 14:20:41] "GET /supervisor/institute HTTP/1.1" 200 68002
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 65182)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:23:09] "GET /supervisordownload_organization/ HTTP/1.1" 200 9550
+[08/Feb/2021 14:25:03] "POST /supervisor/upload_organization HTTP/1.1" 200 39
+[08/Feb/2021 14:25:03] "GET /supervisor/institute HTTP/1.1" 200 68174
+[08/Feb/2021 14:25:05] "GET /supervisor/institute HTTP/1.1" 200 68174
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 49215)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:25:39] "GET /supervisor HTTP/1.1" 200 92933
+[08/Feb/2021 14:25:59] "GET /supervisor/evaluation_edit?csrfmiddlewaretoken=CA6AxqOSqHQURTZ5PH7JL8DXiH8GxD3DLNVzc6coRchFETZYK88uWPBkcc3nGDUt&edit_id=18 HTTP/1.1" 200 1066
+[08/Feb/2021 14:26:27] "GET /supervisor/institute HTTP/1.1" 200 68174
+[08/Feb/2021 14:26:28] "GET /supervisor/institute HTTP/1.1" 200 68174
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 49691)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:27:21] "GET /supervisor/people HTTP/1.1" 200 92532
+[08/Feb/2021 14:27:27] "GET /supervisor HTTP/1.1" 200 92933
+[08/Feb/2021 14:27:33] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 14:27:33] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 14:27:33] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:27:34] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:27:34] "GET /captchaimage/74e4a257cb0b3166c87118536b605dc037d34bae/ HTTP/1.1" 200 4886
+[08/Feb/2021 14:27:44] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:27:44] "GET /administrator HTTP/1.1" 200 13971
+[08/Feb/2021 14:27:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[08/Feb/2021 14:27:51] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 49936)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:28:05] "GET /administratordownload_indicator/ HTTP/1.1" 200 8810
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 184, in finish_response
+    self.write(data)
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 292, in write
+    self._write(data)
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 466, in _write
+    result = self.stdout.write(data)
+  File "/usr/local/lib/python3.7/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+[08/Feb/2021 14:28:31] "GET /administrator/indicator_export?current_eval=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0 HTTP/1.1" 200 1732
+[08/Feb/2021 14:28:52] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 46350
+[08/Feb/2021 14:28:52] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=538 HTTP/1.1" 200 46350
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 50072)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:29:01] "GET /administrator/timeliner?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 52122
+[08/Feb/2021 14:29:01] "GET /static/layui/css/modules/laydate/default/laydate.css HTTP/1.1" 200 7537
+[08/Feb/2021 14:29:02] "GET /static/js/echarts.min.js HTTP/1.1" 200 780697
+[08/Feb/2021 14:29:02] "GET /static/layui/lay/modules/upload.js HTTP/1.1" 200 7466
+[08/Feb/2021 14:29:02] "GET /administrator/timeliner?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 52122
+[08/Feb/2021 14:29:02] "GET /static/layui/lay/modules/layer.js HTTP/1.1" 200 22071
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 50223)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:29:02] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1" 200 14425
+[08/Feb/2021 14:29:10] "GET /administrator/questionaire_manage?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 133523
+[08/Feb/2021 14:29:10] "GET /static/src/js/questionaire_management.js HTTP/1.1" 200 171
+[08/Feb/2021 14:29:48] "GET /administrator/calculate?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26656
+[08/Feb/2021 14:29:49] "GET /static/app-assets/js/horizontal-timeline.js HTTP/1.1" 200 12494
+[08/Feb/2021 14:29:49] "GET /administrator/calculate?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26656
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 50408)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:30:11] "GET /static/layui/css/modules/layer/default/loading-1.gif HTTP/1.1" 200 701
+[08/Feb/2021 14:30:11] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1" 200 11493
+[08/Feb/2021 14:37:42] "GET /administrator/review?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26670
+[08/Feb/2021 14:37:43] "GET /administrator/review?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26670
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 51646)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:37:45] "GET /administrator/calculate?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26656
+[08/Feb/2021 14:37:45] "GET /administrator/calculate?timeevalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc HTTP/1.1" 200 26656
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 51645)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:39:28] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 14:39:28] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 14:39:28] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:39:29] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:39:29] "GET /captchaimage/a1803713dfa957494cac4ff005504ec87629bdab/ HTTP/1.1" 200 4493
+[08/Feb/2021 14:39:38] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:39:38] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 14:39:58] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:40:01] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 14:40:02] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:40:13] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 14:40:13] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 14:40:13] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:40:14] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:40:14] "GET /captchaimage/4cc25f3fa98e9fa075b4ac078630b0c5052607b7/ HTTP/1.1" 200 4637
+[08/Feb/2021 14:40:22] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:40:22] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:40:23] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:44:26] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 14:44:28] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:44:30] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36148
+[08/Feb/2021 14:44:31] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:44:32] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[08/Feb/2021 14:44:35] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:44:36] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:44:41] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:44:41] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:44:45] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:44:45] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 14:44:45] "GET /static/app-assets/img/ico/favicon.ico HTTP/1.1" 200 1150
+[08/Feb/2021 14:44:51] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:44:51] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:44:54] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:44:55] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 14:44:57] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 14:44:59] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:44:59] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:45:02] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 184, in finish_response
+    self.write(data)
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 292, in write
+    self._write(data)
+  File "/usr/local/lib/python3.7/wsgiref/handlers.py", line 466, in _write
+    result = self.stdout.write(data)
+  File "/usr/local/lib/python3.7/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+[08/Feb/2021 14:45:03] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:45:04] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36302
+[08/Feb/2021 14:45:09] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:45:12] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36300
+[08/Feb/2021 14:45:12] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 14:45:13] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:45:15] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:45:18] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:45:18] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:49:38] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:49:38] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 14:49:40] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:49:40] "POST /user/answer_save HTTP/1.1" 200 19
+[08/Feb/2021 14:49:55] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=1 HTTP/1.1" 200 36356
+[08/Feb/2021 14:49:57] "GET /user/questions?evalname=%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE1&page=0 HTTP/1.1" 200 36573
+[08/Feb/2021 14:49:59] "GET /user HTTP/1.1" 200 13060
+[08/Feb/2021 14:50:02] "GET /user/questions?evalname=ceshi2&page=0 HTTP/1.1" 200 36300
+[08/Feb/2021 14:50:32] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 14:50:32] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 14:50:32] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:50:34] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:50:34] "GET /captchaimage/9465571331c208f3a66c77a57dc08bb4bbfa23e3/ HTTP/1.1" 200 5063
+[08/Feb/2021 14:50:42] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:50:42] "GET /administrator HTTP/1.1" 200 13971
+[08/Feb/2021 14:50:46] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+[08/Feb/2021 14:50:47] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=0 HTTP/1.1" 200 46334
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 52850)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:50:48] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+[08/Feb/2021 14:50:49] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46546
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 53956)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:50:50] "GET /administrator/questionaire?nodeID=542 HTTP/1.1" 200 69321
+[08/Feb/2021 14:50:50] "GET /static/app-assets/css/questionaire.css HTTP/1.1" 200 428
+[08/Feb/2021 14:51:29] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 14:51:29] "POST /administrator/questionaire_submit HTTP/1.1" 200 18
+[08/Feb/2021 14:51:31] "GET /administrator/questionaire?nodeID=542 HTTP/1.1" 200 69825
+[08/Feb/2021 14:51:32] "GET /administrator/questionaire?nodeID=542 HTTP/1.1" 200 69825
+[08/Feb/2021 14:51:33] "GET /static/app-assets/img/ico/favicon-32.png HTTP/1.1" 200 1795
+[08/Feb/2021 14:51:36] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46732
+[08/Feb/2021 14:51:36] "GET /administrator/standard?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&admin=qzc&id=542 HTTP/1.1" 200 46732
+----------------------------------------
+Exception happened during processing of request from ('159.226.29.55', 53973)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.7/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.7/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.7/site-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[08/Feb/2021 14:51:40] "GET /logout HTTP/1.1" 302 0
+[08/Feb/2021 14:51:40] "GET / HTTP/1.1" 200 7815
+[08/Feb/2021 14:51:40] "GET /static/app-assets/js/abstract.js HTTP/1.1" 404 1698
+[08/Feb/2021 14:51:41] "GET /login HTTP/1.1" 200 8270
+[08/Feb/2021 14:51:41] "GET /captchaimage/796be6ae4038d9ba4d3cb80771c36a8183374fbe/ HTTP/1.1" 200 4454
+[08/Feb/2021 14:51:48] "POST /login HTTP/1.1" 302 0
+[08/Feb/2021 14:51:48] "GET /user HTTP/1.1" 200 13050
+[08/Feb/2021 14:51:49] "GET /user/questions?evalname=2020%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%8C%96%E8%AF%84%E4%BC%B0&page=0 HTTP/1.1" 200 36539
+Internal Server Error: /user/answer_save
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1366, "Incorrect string value: '\\xE4\\xB8\\x8D\\xE9\\x94\\x99' for column `de`.`Table_Question_Result`.`Table_Question_Result_col_Answer` at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/DESP/user/views.py", line 164, in answer_save
+    TableQuestionResult.objects.create(**new_record)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 447, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 754, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 792, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 935, in _do_insert
+    using=using, raw=raw,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.DataError: (1366, "Incorrect string value: '\\xE4\\xB8\\x8D\\xE9\\x94\\x99' for column `de`.`Table_Question_Result`.`Table_Question_Result_col_Answer` at row 1")
+[08/Feb/2021 14:51:56] "POST /user/answer_save HTTP/1.1" 500 221724

@@ -1,8 +1,13 @@
+import random
+import string
+
+import xlrd
 from django.contrib.auth.hashers import make_password, check_password
+from django.db import transaction
 from django.shortcuts import redirect
 from django.shortcuts import render
 from django.views import View
-from administrator.models import TableTimeliner, TableQuestionContent
+from administrator.models import TableTimeliner, TableQuestionContent, TableQuestionResult
 from login import models
 from login.forms import ForgetForm, ResetForm
 from login.utils.email_send import send_register_email
@@ -19,6 +24,8 @@ import xlwt
 from io import BytesIO
 from xlwt import Workbook
 from django.utils.encoding import escape_uri_path
+from .models import TableUser
+
 
 
 # Create your views here.
@@ -174,7 +181,7 @@ def supervisor(request):
             for each1 in x:
                 # print(each.table_organization_col_id)
                 if int(each1) == each.table_organization_col_id:
-                    print(each1)
+                    # print(each1)
                     index += 1
             if index == 0:
                 data2.append({
@@ -237,12 +244,13 @@ def user(request):
     if not request.session.get('is_login', None) or request.session['permission'] != 3:
         return redirect('/')
     user_name = request.session['user_name']
+    print(user_name)
     orgid = \
         models.TableUser.objects.filter(table_user_col_name=user_name).values_list('table_user_col_organization')[0][0]
     orgname = \
         TableOrganization.objects.filter(table_organization_col_id=orgid).values_list('table_organization_col_name')[0][
             0]
-    print(orgid,orgname)
+    print(orgid, orgname)
     data_org = TableEvaluation.objects.all()
     evaindex = []
     for each in data_org:
@@ -295,9 +303,10 @@ def user(request):
         return render(request, 'login/usrselect.html', {'user': user_name, 'orgname': orgname})
     for each in evals:
         if len(each) != 0:
+            eval_id = TableEvaluation.objects.get(table_evaluation_col_name=evals[0])
             questionaire_answer = set(
                 TableQuestionContent.objects.filter(
-                    table_question_content_col_evalname=eval[0].table_evaluation_col_id).values_list(
+                    table_question_content_col_evalname_id=eval_id).values_list(
                     'table_question_content_col_indicator_id'))
             group = []
             for eachquestion in questionaire_answer:
@@ -455,6 +464,12 @@ def Aboutus(request):
 
 def download_form(request):
     question_id = request.GET.get('form')
+    user_name = request.session['user_name']
+    user_info = TableUser.objects.get(table_user_col_name=user_name)
+    user_real_name = user_info.table_user_col_real_name
+    user_org = user_info.table_user_col_organization_id
+    print(user_org)
+    user_org_name = TableOrganization.objects.get(table_organization_col_id=user_org).table_organization_col_name
     select_question = TableQuestionContent.objects.get(table_question_content_col_question_id=question_id)
     indicator_id = select_question.table_question_content_col_indicator_id
     question_num = select_question.table_question_content_col_question_number
@@ -488,11 +503,17 @@ def download_form(request):
     worksheet.write(0, 1, "id", style)
     worksheet.write(0, 2, "指标id", style)
     worksheet.write(0, 3, "题号", style)
+    worksheet.write(0, 4, "用户", style)
+    worksheet.write(0, 5, "姓名", style)
+    worksheet.write(0, 6, "单位", style)
 
     worksheet.write(1, 0, content_title, style)
     worksheet.write(1, 1, question_id, style)
     worksheet.write(1, 2, indicator_id, style)
     worksheet.write(1, 3, question_num, style)
+    worksheet.write(1, 4, user_name, style)
+    worksheet.write(1, 5, user_real_name, style)
+    worksheet.write(1, 6, user_org_name, style)
 
     for x in range(0, len(content_column)):
         worksheet.write(2, x, str(x + 1), style)
@@ -505,6 +526,57 @@ def download_form(request):
     response['Content-Disposition'] = 'attachment;filename="{0}"'.format(escape_uri_path(file_name))
     response.write(output.getvalue())
     return response
+    # question_id = request.GET.get('form')
+    # select_question = TableQuestionContent.objects.get(table_question_content_col_question_id=question_id)
+    # indicator_id = select_question.table_question_content_col_indicator_id
+    # question_num = select_question.table_question_content_col_question_number
+    # # content转化为字典
+    # question_content = eval(select_question.table_question_content_col_content)
+    # content_title = question_content['title']
+    # content_column = question_content['column']
+    #
+    # workbook = Workbook(encoding='utf-8')
+    # file_name = u"form_" + str(indicator_id) + "_" + str(question_num) + ".xls"
+    # sheet_str = "" + str(question_id) + "_" + str(indicator_id) + "_" + str(question_num)
+    # worksheet = workbook.add_sheet(sheet_str)
+    #
+    # # 样式
+    # style = xlwt.XFStyle()  # 创建一个样式对象，初始化样式
+    # al = xlwt.Alignment()
+    # al.horz = 0x02  # 设置水平居中
+    # al.vert = 0x01  # 设置垂直居中
+    # style.alignment = al
+    # style.alignment.wrap = 1
+    # # 设置行高
+    # tall_style = xlwt.easyxf('font:height 720;')  # 36pt,类型小初的字号
+    # for num in range(0, 20):
+    #     row_set = worksheet.row(num)
+    #     row_set.set_style(tall_style)
+    # # 设置列宽
+    # for num in range(0, 10):
+    #     worksheet.col(num).width = 150 * 20
+    #
+    # worksheet.write(0, 0, "题目", style)
+    # worksheet.write(0, 1, "id", style)
+    # worksheet.write(0, 2, "指标id", style)
+    # worksheet.write(0, 3, "题号", style)
+    #
+    # worksheet.write(1, 0, content_title, style)
+    # worksheet.write(1, 1, question_id, style)
+    # worksheet.write(1, 2, indicator_id, style)
+    # worksheet.write(1, 3, question_num, style)
+    #
+    # for x in range(0, len(content_column)):
+    #     worksheet.write(2, x, str(x + 1), style)
+    #     worksheet.write(3, x, content_column[x], style)
+    #
+    # output = BytesIO()
+    # workbook.save(output)
+    # output.seek(0)
+    # response = HttpResponse(output.getvalue(), content_type='application/vnd.ms-excel')
+    # response['Content-Disposition'] = 'attachment;filename="{0}"'.format(escape_uri_path(file_name))
+    # response.write(output.getvalue())
+    # return response
 
 def upload_xlsx(request):
     """ 导入Excel数据 """
@@ -560,12 +632,11 @@ def upload_xlsx(request):
                 store_question_id = TableQuestionContent.objects.get(
                     table_question_content_col_question_id=question_id).table_question_content_col_question_id
 
-                if TableQuestionResult.objects.filter(
-                        table_question_result_col_user_id=store_user_id).exists() & TableQuestionResult.objects.filter(
-                        table_question_result_col_question_id=store_question_id).exists():
+                if TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(table_question_result_col_question_id=store_question_id)).exists():
                     TableQuestionResult.objects.filter(Q(table_question_result_col_user_id=store_user_id) & Q(
                         table_question_result_col_question_id=store_question_id)).update(
                         table_question_result_col_answer=store_answer,
+                        table_question_result_col_marks=store_mark,
                     )
                 else:
                     store_blank = ''.join(random.sample(string.ascii_letters + string.digits, 20))  # 创建blank随机名
@@ -584,7 +655,7 @@ def upload_xlsx(request):
         except Exception as e:
             print(e)
             # return render(request, 'user/user.html')
-            pass
+            return HttpResponse('error')
     pass
     # return render(request, 'user/user.html')
 
